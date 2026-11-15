@@ -13,7 +13,8 @@ from commons.utils import dewiki, compute_embeddings, extract_raw_abstract, extr
 
 def _pick_most_relevant_predicate(abstract_embedding, candidates: list[tuple[str, str, str]]) -> tuple[str, str, str]:
     shuffle(candidates)
-    predicate_descriptions = [fetch_predicate_metadata(predicate) for _, predicate, _ in candidates]
+    # predicates missing from the predicates table (e.g. properties newer than the table) fall back to their id
+    predicate_descriptions = [fetch_predicate_metadata(predicate) or (predicate, "") for _, predicate, _ in candidates]
     predicate_embeddings = torch.cat(
         [compute_embeddings(f"{label}, {description}") for label, description in predicate_descriptions], dim=0
     )
@@ -35,7 +36,7 @@ def _get_edge_candidates(root_wikidata_id, mentions: list[str]) -> dict[str, lis
         return None
 
     # convert wikipedia titles to wikidata ids
-    neighbors = [meta[2] for neighbor, meta in bulk_fetch_wikipedia_titles(mentions).items()]
+    neighbors = [meta[2] for neighbor, meta in bulk_fetch_wikipedia_titles(mentions).items() if meta[2]]
 
     edge_candidates = [(root_wikidata_id, neighbor) for neighbor in neighbors]
     edge_candidates += [(neighbor, root_wikidata_id) for neighbor in neighbors]

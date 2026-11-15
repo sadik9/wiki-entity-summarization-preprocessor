@@ -15,7 +15,7 @@ public class BZip2BufferReader {
         return new BufferedReader(
                 new InputStreamReader(
                         new BZip2CompressorInputStream(
-                                new FileInputStream(dumpFile.toFile()), false),
+                                new FileInputStream(dumpFile.toFile()), true),
                         StandardCharsets.UTF_8));
     }
 }

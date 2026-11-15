@@ -19,7 +19,7 @@ import java.nio.charset.StandardCharsets;
 @Component
 @Slf4j
 public class V8__insert_wikidata_predicates_continue extends BaseJavaMigration {
-    @Value("${app.storage.wikidata-predicates-path-con:classpath:wikipedia_predicates_continue.tsv}")
+    @Value("${app.storage.wikidata-predicates-path-con:classpath:wikidata_predicates_continue.tsv}")
     private String filePath;
     @Autowired
     private ResourceLoader resourceLoader;
@@ -39,7 +39,9 @@ public class V8__insert_wikidata_predicates_continue extends BaseJavaMigration {
             String[] headers = line.split("\t");
             String[] row;
             while ((line = reader.readLine()) != null) {
-                persistRow(jdbcTemplate, line.split("\t"));
+                // limit -1 keeps trailing empty columns (e.g. a property without a description); the default
+                // split drops them, and the row then has too few columns
+                persistRow(jdbcTemplate, line.split("\t", -1));
             }
         }
     }

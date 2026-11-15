@@ -22,11 +22,15 @@ public class PersistenceService {
         if (driver.isPresent()) {
             try (Session session = driver.get().session()) {
                 session.executeWriteWithoutResult(tx -> {
-                    var result = tx.run("CREATE INDEX FOR (n:WikiEntity) ON (n.entityName)").consume();
-                    logger.info(result.toString());
+                    // Without this, every MERGE on WikiEntity is a full label scan and ingestion becomes quadratic
+                    var result = tx.run("""
+                            CREATE CONSTRAINT wikientity_name IF NOT EXISTS
+                            FOR (n:WikiEntity) REQUIRE n.entityName IS UNIQUE
+                            """).consume();
+                    logger.info("Neo4j uniqueness constraint on WikiEntity.entityName ensured: {}", result.counters());
                 });
             } catch (Exception e) {
-                logger.info("Neo4j index could not be created");
+                logger.error("Neo4j constraint could not be created", e);
             }
         }
     }

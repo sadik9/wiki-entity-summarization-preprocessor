@@ -33,7 +33,7 @@ def basic_replacements(text):
 def remove_double_curly(text):
     while True:
         before = len(text)
-        text = re.sub('', '', text)
+        text = re.sub(r'\{\{[^{}]*\}\}', '', text)
         after = len(text)
         if before == after:
             return text
@@ -84,10 +84,10 @@ def extract_mention_titles(raw_abstract: str) -> list[str]:
                  "Draft_talk:", "TimedText:", "TimedText_talk:", "Book:", "Book_talk:",
                  "Education_Program:")
             ),
-            [capitalize_first_letter(str(link.title).replace(" ", "_")) for link in abstract_links]
+            [capitalize_first_letter(str(link.title).split("#")[0].strip().replace(" ", "_")) for link in abstract_links]
         )
     )
-    return filtered_links
+    return [link for link in filtered_links if link]
 
 
 def extract_raw_abstract(content: str) -> str:

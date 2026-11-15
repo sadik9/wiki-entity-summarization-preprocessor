@@ -1,6 +1,7 @@
 package com.github.msorkhpar.graphbuilder;
 
 import com.github.msorkhpar.graphbuilder.service.WikidataService;
+import com.github.msorkhpar.wikistorage.data.PersistenceService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -32,6 +33,7 @@ public class WikidataGraphBuilderApplication implements CommandLineRunner {
     private String pattern;
 
     private final WikidataService wikidataProcessor;
+    private final PersistenceService persistenceService;
 
 
     public static void main(String[] args) {
@@ -47,6 +49,7 @@ public class WikidataGraphBuilderApplication implements CommandLineRunner {
                 dumpFiles.add(dumpFile);
             }
         }
+        persistenceService.createNeo4jIndexes();
         wikidataProcessor.constructWikidataTree(dumpFiles.reversed());
         logger.info("Extraction process is Done!");
 

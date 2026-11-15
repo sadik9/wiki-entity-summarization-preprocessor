@@ -7,6 +7,7 @@ import com.github.msorkhpar.wikistorage.utils.WikidataEnglishInfoDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Element;
@@ -50,12 +51,20 @@ class WikidataDumpFileService {
 
                 if (line.trim().equals("</page>")) {
                     String pageString = xmlBuilder.toString();
+                    // prepare the builder for the next page; this must happen for every page, including the skipped
+                    // ones, otherwise the next page gets appended to this one and is lost to an XML parse error
+                    xmlBuilder.setLength(0);
+                    counter++;
+                    if (counter % 10_000 == 0) {
+                        logger.info("[{}] pages of [{}] is processed", counter, fileName);
+                    }
                     try {
                         Element xmlPage = createPage(pageString);
                         Optional<Set<KGTriple>> tripleSet = WikiDataEntityExtractor.extractTriples(xmlPage);
                         Optional<WikidataEnglishInfoDTO> metadata = extractMetadata(xmlPage);
                         if (tripleSet.isEmpty() || metadata.isEmpty() ||
-                                (metadata.get().getLabel().isEmpty() && metadata.get().getDescription().isEmpty())
+                                (StringUtils.isEmpty(metadata.get().getLabel()) &&
+                                        StringUtils.isEmpty(metadata.get().getDescription()))
                         ) {
                             continue;
                         }
@@ -64,13 +73,8 @@ class WikidataDumpFileService {
                             processMetadata(metadata);
                         }
                     } catch (Exception e) {
-                        logger.info("Extraction from the following text was not successful, {}", pageString);
-                    }
-                    // prepare the builder for the next page
-                    xmlBuilder.setLength(0);
-                    counter++;
-                    if (counter++ % 10_000 == 0) {
-                        logger.info("[{}] pages of [{}] is processed", counter, fileName);
+                        logger.warn("Extraction from page [{}] of [{}] was not successful: {}",
+                                counter, fileName, e.getMessage());
                     }
                 }
             }

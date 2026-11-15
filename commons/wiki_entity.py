@@ -36,7 +36,7 @@ class WikiEntity:
             to_wikipedia_id, to_wikipedia_title, to_wikidata_id = fetch_wiki_mapping(summary[2])
             result = {
                 'from_entity': from_wikidata_id,
-                'from_wikipedia_id': from_wikidata_id,
+                'from_wikipedia_id': from_wikipedia_id,
                 'from_wikipedia_title': from_wikipedia_title,
                 'predicate': summary[1],
                 'predicate_label': predicate_label,
@@ -76,11 +76,13 @@ class WikiEntity:
     def get_wikidata_label(self):
         if self._wikidata_label:
             return self._wikidata_label
-        self._wikidata_label, self._wikidata_description = fetch_wikidata_metadata(self.wikidata_id)
+        # items outside the loaded Wikidata dump files have no `subjects` row
+        self._wikidata_label, self._wikidata_description = fetch_wikidata_metadata(self.wikidata_id) or (None, None)
         return self._wikidata_label
 
     def get_wikidata_description(self):
         if self._wikidata_description:
             return self._wikidata_description
-        self._wikidata_label, self._wikidata_description = fetch_wikidata_metadata(self.wikidata_id)
+        # items outside the loaded Wikidata dump files have no `subjects` row
+        self._wikidata_label, self._wikidata_description = fetch_wikidata_metadata(self.wikidata_id) or (None, None)
         return self._wikidata_description

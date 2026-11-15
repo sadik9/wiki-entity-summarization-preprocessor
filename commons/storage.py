@@ -21,7 +21,7 @@ POSTGRES_DB = os.getenv("DB_NAME")
 POSTGRES_USER = os.getenv("DB_USER")
 POSTGRES_PASS = os.getenv("DB_PASSWORD")
 DB_PORT = os.getenv("DB_PORT")
-MAX_CONNECTION_POOL = os.getenv("MAX_DB_CONNECTION_POOL")
+MAX_CONNECTION_POOL = int(os.getenv("MAX_DB_CONNECTION_POOL", "10"))
 
 NEO4J_URI = f"bolt://{os.getenv('NEO4J_HOST')}:7687"
 NEO4J_DB = "neo4j"
