@@ -106,6 +106,38 @@ class KnowledgeBase:
             "SELECT wikipedia_title, wikidata_id FROM wiki_page_to_wiki_data_mappings "
             "WHERE wikipedia_title = ANY(%s) AND wikidata_id IS NOT NULL", titles)}
 
+    def anchors_available(self) -> dict | None:
+        """Build provenance of the anchor dictionary, or None when it hasn't been built in this database."""
+        with self.pg.cursor() as cursor:
+            cursor.execute("SELECT to_regclass('relief_anchors') IS NOT NULL AND to_regclass('relief_anchor_meta') IS NOT NULL")
+            if not cursor.fetchone()[0]:
+                return None
+            cursor.execute("SELECT key, value FROM relief_anchor_meta")
+            return dict(cursor.fetchall())
+
+    def anchors_for(self, qids, per_entity: int = 200) -> dict[str, list[tuple[str, int]]]:
+        """qid -> its most frequent link texts [(surface, n)]."""
+        result: dict[str, list[tuple[str, int]]] = {}
+        for qid, surface, n in self._query(
+                "SELECT wikidata_id, surface, n FROM (SELECT wikidata_id, surface, n, row_number() OVER "
+                f"(PARTITION BY wikidata_id ORDER BY n DESC) AS rank FROM relief_anchors WHERE wikidata_id = ANY(%s)) t "
+                f"WHERE rank <= {int(per_entity)}", qids):
+            result.setdefault(qid, []).append((surface, n))
+        return result
+
+    def anchor_totals(self, surfaces) -> dict[str, int]:
+        """surface -> how many links use exactly this text, to any entity."""
+        return {s: int(n) for s, n in self._query(
+            "SELECT surface, sum(n) FROM relief_anchors WHERE surface = ANY(%s) GROUP BY surface", surfaces)}
+
+    def summaries(self, qid: str) -> set[tuple[str, str, str]]:
+        """The original WikES (1.0.x) ground truth of a root: its SUMMARY edges in Neo4j."""
+        with self.neo4j.session(database="neo4j") as session:
+            return {(r["s"], r["p"], r["o"]) for r in session.run(
+                "MATCH (s:WikiEntity)-[r:SUMMARY {summary_for: $q}]->(o:WikiEntity) "
+                "WHERE s.entityName = $q OR o.entityName = $q "
+                "RETURN s.entityName AS s, r.predicate AS p, o.entityName AS o", q=qid)}
+
     def article(self, qid: str) -> tuple[int | None, str | None]:
         with self.pg.cursor() as cursor:
             cursor.execute(

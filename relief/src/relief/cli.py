@@ -30,6 +30,22 @@ def _anchors_build(args, settings: Settings) -> int:
     return 0
 
 
+def _extract(args, settings: Settings) -> int:
+    from pathlib import Path
+
+    from relief.align import read_seeds, run_extract
+    from relief.candidates import KnowledgeBase
+    from relief.db import neo4j_driver, pg_connect
+
+    seeds = args.qids or read_seeds(Path(args.seeds))
+    out_dir = Path(settings.runs_dir) / args.run_id
+    with pg_connect(settings) as pg, neo4j_driver(settings) as neo4j:
+        manifest = run_extract(KnowledgeBase(pg, neo4j), seeds, out_dir, settings.git_commit)
+    print(json.dumps(manifest, indent=2))
+    print(f"written to {out_dir}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="relief", description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
@@ -49,6 +65,12 @@ def build_parser() -> argparse.ArgumentParser:
                                help="Postgres parallel workers for the final aggregation (needs shared memory)")
     anchors_build.add_argument("--aggregate-mem", default="256MB", help="Postgres work_mem for the aggregation")
     anchors_build.set_defaults(handler=_anchors_build)
+
+    extract = commands.add_parser("extract", help="R1-R4: candidate instances (edge x evidence) for a list of roots")
+    extract.add_argument("--seeds", default="pilot/pilot_seeds.csv", help="CSV with a `qid` column")
+    extract.add_argument("--qids", nargs="+", help="roots given directly, instead of --seeds")
+    extract.add_argument("--run-id", required=True, help="output folder name under the runs directory")
+    extract.set_defaults(handler=_extract)
     return parser
 
 

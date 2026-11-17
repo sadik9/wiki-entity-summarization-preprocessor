@@ -17,6 +17,7 @@ RUN pip install -r requirements.lock
 COPY relief/pyproject.toml ./
 COPY relief/src ./src
 COPY relief/tests ./tests
+COPY relief/pilot ./pilot
 # --no-build-isolation: build with the setuptools already installed above, no second download
 RUN pip install --no-deps --no-build-isolation -e .
 
