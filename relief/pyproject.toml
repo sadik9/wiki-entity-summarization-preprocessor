@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relief"
+version = "0.1.0"
+description = "RELIEF: RElation extraction via LexIcal-matching and Entailment-based Filtering, a ground-truth annotation pipeline for WikES"
+requires-python = ">=3.12,<3.13"
+# Exact versions live in requirements.lock; these are the direct dependencies.
+dependencies = [
+    "torch",
+    "transformers",
+    "sentencepiece",
+    "protobuf",
+    "accelerate",
+    "psycopg2-binary",
+    "neo4j",
+    "python-dotenv",
+    "pandas",
+    "numpy",
+    "networkx",
+    "more-itertools",
+    "mwparserfromhell",
+    "wikitextparser",
+    "html2text",
+    "pyahocorasick",
+    "pysbd",
+    "tqdm",
+    "jsonlines",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+relief = "relief.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: needs the WikES Postgres and Neo4j databases (set RELIEF_INTEGRATION=1)"]

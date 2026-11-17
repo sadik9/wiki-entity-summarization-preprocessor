@@ -12,6 +12,8 @@ POSTGRES_VOLUME_PATH=$WIKIES_HOME/pg-data
 NEO4J_VOLUME_PATH=$WIKIES_HOME/neo4j-data
 WIKIDATA_DUMPS_PATH=$WIKIES_HOME/dumps/wikidata
 WIKIPEDIA_DUMPS_PATH=$WIKIES_HOME/dumps/wikipedia
+RELIEF_RUNS_PATH=$WIKIES_HOME/relief-runs
+RELIEF_MODELS_PATH=$WIKIES_HOME/models
 "
 }
 
@@ -43,6 +45,8 @@ WPPE_POOL_SIZE=2
 WPPE_HEAP=2g
 MAX_DB_CONNECTION_POOL=10
 SUMMARY_WORKERS=4
+# RELIEF: auto (CUDA if available), cuda or cpu
+RELIEF_DEVICE=auto
 "
 }
 
@@ -96,7 +100,8 @@ initialize_env ".env" apps
 initialize_env "./configs/neo4j.env" neo4j_env
 
 mkdir -p "$WIKIES_HOME/pg-data" "$WIKIES_HOME/neo4j-data" "$WIKIES_HOME/dumps/wikidata" \
-  "$WIKIES_HOME/dumps/wikipedia" "$WIKIES_HOME/dumps/sql"
+  "$WIKIES_HOME/dumps/wikipedia" "$WIKIES_HOME/dumps/sql" \
+  "$WIKIES_HOME/relief-runs" "$WIKIES_HOME/models"
 
 echo "*************************************"
 echo "Done."

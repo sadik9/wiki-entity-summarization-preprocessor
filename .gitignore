@@ -103,3 +103,9 @@ override.tf.json
 # example: *tfplan*
 
 **/.terraform.lock.hcl
+
+# RELIEF fallback folders (normally under $WIKIES_HOME)
+relief-runs/
+relief-models/
+__pycache__/
+*.pyc

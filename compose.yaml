@@ -72,6 +72,43 @@ services:
       - ./.env:/app/.env
     networks:
       - wiki-es-network
+  relief:
+    # Ground-truth annotation (RELIEF). One-off jobs: `docker compose run --rm relief <command>`.
+    build:
+      context: .
+      dockerfile: relief/Dockerfile
+      args:
+        GIT_COMMIT: ${RELIEF_GIT_COMMIT:-unknown}
+    image: wikes-relief:latest
+    profiles: [ "relief" ]
+    logging: *default-logging
+    env_file:
+      - .env
+    environment:
+      - DB_HOST=wiki-es-pg
+      - DB_PORT=5432
+      - NEO4J_HOST=wiki-es-neo
+      - NEO4J_PORT=7687
+      - HF_HOME=/models
+      - RELIEF_RUNS_DIR=/runs
+    volumes:
+      - ${RELIEF_RUNS_PATH:-./relief-runs}:/runs
+      - ${RELIEF_MODELS_PATH:-./relief-models}:/models
+    shm_size: 4g
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    depends_on:
+      neo4j:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    networks:
+      - wiki-es-network
   postgres:
     hostname: wiki-es-pg
     # Pinned: postgres:18+ images changed the data directory layout and refuse a mount at /var/lib/postgresql/data.

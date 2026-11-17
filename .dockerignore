@@ -18,3 +18,6 @@ statistics.py
 visualizer.py
 missing_data_pages.csv
 .env
+relief-runs
+relief-models
+**/.pytest_cache
