@@ -1,6 +1,6 @@
 # RELIEF ground-truth policy
 
-Status: **draft for sign-off** (Phase 0). Items marked **[decide]** need an explicit choice before Phase 1.
+Status: **agreed** (Phase 0, 2026-11-17). The meta-entity class lists in §5 are finalised against the pilot data in Phase 1.
 
 This document defines *what* counts as a ground-truth summary triple. The pipeline (R1–R8, see `RELIEF-plan.md`) is how RELIEF approximates it; the gold set (see `annotation-guidelines.md`) is how we measure the approximation.
 
@@ -18,8 +18,7 @@ The graph (Neo4j), page↔QID mapping, article text and labels (Postgres) all co
 
 ## 3. Evidence
 - **Scope:** section 0 of the root's article: the lead prose before the first heading, **and** the infobox(es) in it. This is the scope of the original WikES annotation, which keeps the two comparable.
-- **Not evidence:** the article body, other articles, references, categories, navigation boxes, image captions, hatnotes.
-- **[decide] Body text:** stays out of scope for the thesis (could be future work).
+- **By design, the summary of a root is exactly the set of its triples expressed in these two parts** (decision of 2026-11-17). Nothing else is evidence: not the article body, other articles, references, categories, navigation boxes, image captions or hatnotes.
 
 ## 4. "Expressed"
 A relation is expressed when a careful reader, given **only** the evidence, would accept the triple as stated or directly implied:
@@ -50,12 +49,16 @@ Their evidence is the first lead sentence and the infobox name fields (`name`, `
 ## 7. Decision rule
 - **Every candidate goes through NLI**, including infobox evidence (decision of 2026-11-13).
 - A triple is accepted when its best evidence reaches P(entailment) ≥ τ and P(contradiction) is below a guard value. **τ and the guard are calibrated on the gold set**, never fixed in advance.
-- **[decide] Several predicates for the same pair:** each predicate is judged separately. For the **datasets**, the default is to *keep every entailed predicate*. The *best one only* variant (comparable to the original's one-per-pair rule) is produced and reported alongside it.
+- **Several predicates for the same pair** (decision of 2026-11-17): each predicate is judged separately, and **every entailed predicate is kept**. Example: if the lead says Elvis lived at, died at and is buried at Graceland, *residence*, *place of death* and *place of burial* are three summary triples.
+- **Inverse and symmetric duplicates collapse to one triple.** When Wikidata stores the same fact in both directions (*Lisa Marie → father → Elvis* and *Elvis → child → Lisa Marie*; *spouse* in both directions), only one copy becomes ground truth: the one with the root as subject if it exists, otherwise the stored one. The other copy stays in the graph.
+- **2023 dump only:** a *best one per pair* variant (comparable to the original's one-predicate-per-pair rule) is also produced, solely for the comparison with WikES 1.0.x. It isn't produced for newer dumps.
 
 ## 8. Root eligibility
-A root enters a dataset when it has at least `MIN_VALID_SUMMARY_EDGES` (default 5) summary triples, as in the original generator.
+A root enters a dataset when it has at least `MIN_VALID_SUMMARY_EDGES` (default 5) summary triples, as in the original generator. The rule applies to **every** dataset (decision of 2026-11-17).
 
-**[decide]** Whether to keep the 1.0.5 roots fixed for dataset variant A even if some fall below 5 under RELIEF. Recommended: yes for variant A (controlled comparison), apply the threshold for variant B.
+The goal is a robust ES benchmark under this policy; comparing with the old ground truth is a secondary analysis. Hence two kinds of dataset, one per dump:
+- **2023 dump, variant A ("relabel"):** the published WikES 1.0.5 graphs with their ground truth replaced by RELIEF's. RELIEF summary edges missing from a graph are added (they're incident to the root). Roots with fewer than 5 RELIEF summaries are **dropped** as roots, and the number dropped is reported. This is also where the comparison with the old ground truth is done.
+- **Newer dump, variant B ("regenerate"):** datasets generated from scratch with RELIEF as the ground-truth source. No old ground truth is kept or compared.
 
 ## 9. Provenance
 Every accepted *and* rejected candidate is stored with:
