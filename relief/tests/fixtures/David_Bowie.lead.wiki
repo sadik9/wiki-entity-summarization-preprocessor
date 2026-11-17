@@ -1,0 +1,47 @@
+{{Short description|English singer-songwriter and actor (1947–2016)}}
+{{Other uses}}
+{{Redirect|The Lower Third|the music venue|12 Bar Club}}
+{{pp|small=yes}}
+{{Featured article}}
+{{EngvarB|date=January 2023}}
+{{Use dmy dates|date=January 2023}}
+{{Infobox person
+| honorific_suffix   = 
+| image              = David-Bowie Chicago 2002-08-08 photoby Adam-Bielawski-cropped.jpg
+<!-- NOTE: Do not replace David-Bowie Chicago 2002-08-08 photoby Adam-Bielawski-cropped.jpg unless it is with a photo under a public domain or free license (meaning NOT fair use). Any fair use photos (i.e. 'promotional photos') violate the Fair Use Policy and will be deleted. See [[Wikipedia:Fair]] use criteria -->| alt                = Bowie smiling
+| caption            = Bowie in 2002
+| birth_name         = David Robert Jones
+| birth_date         = {{Birth date|df=yes|1947|01|08}}
+| birth_place        = London, England<!--Only city names (no boroughs or neighbourhoods).-->
+| death_date         = {{death date and age|df=yes|2016|1|10|1947|1|8}}
+| death_place        = New York City, US
+| occupation         = {{hlist|Singer-songwriter|musician|actor}}<!--Please do not add to this list without first discussing your proposal on the talk page. -->
+| years_active       = 1962–2016
+| works              = {{hlist|[[David Bowie discography|Discography]]|[[List of songs recorded by David Bowie|songs]]|[[David Bowie videography|videography]]|[[David Bowie filmography|filmography]]}}
+| spouse             = {{unbulleted list|{{marriage|[[Angie Bowie|Angie Barnett]]|19 March 1970|8 February 1980|end=divorced}}|{{marriage|[[Iman (model)|Iman]]<br />|24 April 1992}}}}
+| children           = 2, including [[Duncan Jones]]<!-- do not name the other child, who is not notable and hence not reported in the infobox -->
+| awards             = [[List of awards and nominations received by David Bowie|Full list]]
+| module             = {{Infobox musical artist
+| embed           = yes
+| instruments     = {{flatlist|
+* Vocals
+* guitar
+* keyboards
+* saxophone
+* harmonica
+}}
+| genre           = {{hlist|[[Art rock]]|[[glam rock]]|[[Pop music|pop]]|[[Electronic music|electronic]]}}
+| label           = {{hlist|ISO|[[RCA Records|RCA]]|[[Virgin Records|Virgin]]|[[EMI Records|EMI]]|[[Columbia Records|Columbia]]|[[Deram Records|Deram]]|[[Mercury Records|Mercury]]|[[Bertelsmann Music Group|BMG]]|[[Pye Records|Pye]]|[[Vocalion Records|Vocalion]]|[[Parlophone]]|[[Rykodisc|Ryko]]}}
+| past_member_of  = {{hlist|The Konrads|The King Bees|The Manish Boys|The Lower Third|[[The Riot Squad]]|[[The Hype (band)|Hype]]|[[Arnold Corns]]|[[Tin Machine]]}}
+}}
+| website            = {{URL|davidbowie.com}}
+}}
+
+'''David Robert Jones''' (8 January 1947{{spnd}}10 January 2016), known professionally as '''David Bowie''' ({{IPAc-en|ˈ|b|oʊ|i}} {{respell|BOH|ee}}),<ref name="saybowe">{{cite web |title=How to say: Bowie |url=https://www.bbc.co.uk/blogs/magazinemonitor/2007/01/how_to_say_bowie.shtml |publisher=[[BBC]] |date=8 January 2008 |access-date=16 September 2010 |archive-url=https://web.archive.org/web/20210308185641/https://www.bbc.co.uk/blogs/magazinemonitor/2007/01/how_to_say_bowie.shtml |archive-date=8 March 2021}}</ref> was an English singer-songwriter and actor. A leading figure in the music industry, he is regarded as one of the most influential musicians of the 20th century. Bowie was acclaimed by critics and musicians, particularly for his innovative work during the 1970s. His career was marked by reinvention and visual presentation, and his music and stagecraft had a significant impact on [[popular music]].
+
+Bowie developed an interest in music from an early age. He studied art, music and design before embarking on a professional career as a musician in 1963. "[[Space Oddity]]", released in 1969, was his first top-five entry on the [[UK Singles Chart]]. After a period of experimentation, he re-emerged in 1972 during the [[glam rock]] era with his flamboyant and androgynous [[alter ego]] [[Ziggy Stardust (character)|Ziggy Stardust]]. The character was spearheaded by the success of Bowie's single "[[Starman (song)|Starman]]" and album ''[[The Rise and Fall of Ziggy Stardust and the Spiders from Mars]]'', which won him widespread popularity. In 1975, Bowie's style shifted towards a sound he characterised as "[[plastic soul]]", initially alienating many of his UK fans but garnering him his first major US crossover success with the number-one single "[[Fame (David Bowie song)|Fame]]" and the album ''[[Young Americans]]''. In 1976, Bowie starred in the cult film ''[[The Man Who Fell to Earth]]'' and released ''[[Station to Station]]''. In 1977, he again changed direction with the [[electronic music|electronic]]-inflected album ''[[Low (David Bowie album)|Low]]'', the first of three collaborations with [[Brian Eno]] that came to be known as the [[Berlin Trilogy]]. ''[["Heroes" (David Bowie album)|"Heroes"]]'' (1977) and ''[[Lodger (album)|Lodger]]'' (1979) followed; each album reached the UK top five and received lasting critical praise.
+
+After uneven commercial success in the late 1970s, Bowie had three number-one hits: the 1980 single "[[Ashes to Ashes (David Bowie song)|Ashes to Ashes]]", its album ''[[Scary Monsters (and Super Creeps)]]'' and "[[Under Pressure]]" (a 1981 collaboration with [[Queen (band)|Queen]]). He achieved his greatest commercial success in the 1980s with ''[[Let's Dance (David Bowie album)|Let's Dance]]'' (1983). Between 1988 and 1992, he fronted the [[hard rock]] band [[Tin Machine]] before resuming his solo career in 1993. Throughout the 1990s and 2000s, Bowie continued to experiment with musical styles, including [[Industrial music|industrial]] and [[Jungle music|jungle]]. He also continued acting; his roles included Major Jack Celliers in ''[[Merry Christmas, Mr. Lawrence]]'' (1983), [[Jareth]] the Goblin King in ''[[Labyrinth (1986 film)|Labyrinth]]'' (1986), [[Pontius Pilate]] in ''[[The Last Temptation of Christ (film)|The Last Temptation of Christ]]'' (1988), and [[Nikola Tesla]] in ''[[The Prestige (film)|The Prestige]]'' (2006), among other film and television appearances and cameos. He stopped touring after 2004 and his last live performance was at a charity event in 2006. He returned from a decade-long recording hiatus in 2013 with ''[[The Next Day]]'' and remained musically active until his [[Death of David Bowie|death from liver cancer]] in 2016. He died two days after both his 69th birthday and the release of his final album, ''[[Blackstar (album)|Blackstar]]''.
+
+During his lifetime, his record sales, estimated at over 100 million records worldwide, made him one of the [[List of best-selling music artists|best-selling musicians of all time]]. In the UK, he was awarded ten [[BPI certification|platinum]], eleven gold and eight silver album certifications, and released [[List of artists by number of UK Albums Chart number ones|11 number-one albums]]. In the US, he received five [[RIAA certification|platinum]] and nine gold certifications. He was inducted into the [[Rock and Roll Hall of Fame]] in 1996. ''[[Rolling Stone]]'' ranked him among [[Rolling Stone's 100 Greatest Artists of All Time|the greatest artists in history]]. As of 2022, Bowie was the best-selling vinyl artist of the 21st century.
+

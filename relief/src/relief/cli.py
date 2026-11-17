@@ -22,6 +22,14 @@ def _check(args, settings: Settings) -> int:
     return 0 if all(r.ok for r in results) else 1
 
 
+def _anchors_build(args, settings: Settings) -> int:
+    from relief.anchors import build
+
+    print(json.dumps(build(settings, args.workers, args.pages_per_task, args.max_pages,
+                           args.aggregate_workers, args.aggregate_mem), indent=2))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="relief", description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
@@ -30,6 +38,17 @@ def build_parser() -> argparse.ArgumentParser:
     check.add_argument("--only", nargs="+", choices=["runtime", "postgres", "neo4j"], help="run only these checks")
     check.add_argument("--json", action="store_true", help="print the results as JSON")
     check.set_defaults(handler=_check)
+
+    anchors = commands.add_parser("anchors", help="anchor-text dictionary (relief_anchors table)")
+    anchors_commands = anchors.add_subparsers(dest="anchors_command", required=True)
+    anchors_build = anchors_commands.add_parser("build", help="count link texts over all articles (rebuilds the table)")
+    anchors_build.add_argument("--workers", type=int, default=16)
+    anchors_build.add_argument("--pages-per-task", type=int, default=20_000)
+    anchors_build.add_argument("--max-pages", type=int, help="only the first N pages (smoke test)")
+    anchors_build.add_argument("--aggregate-workers", type=int, default=0,
+                               help="Postgres parallel workers for the final aggregation (needs shared memory)")
+    anchors_build.add_argument("--aggregate-mem", default="256MB", help="Postgres work_mem for the aggregation")
+    anchors_build.set_defaults(handler=_anchors_build)
     return parser
 
 

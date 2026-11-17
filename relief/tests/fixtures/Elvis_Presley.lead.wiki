@@ -1,0 +1,96 @@
+{{Short description|American singer and actor (1935–1977)}}
+{{Redirect-multi|2|Elvis|King of Rock and Roll}}
+{{Featured article}}
+{{Pp-semi|small=yes}}
+{{Pp-move-indef}}
+{{Use American English|date=June 2022}}
+{{Use mdy dates|date=December 2022}}
+{{Infobox person
+| name               = Elvis Presley
+| image              = Elvis Presley promoting Jailhouse Rock.jpg
+| alt                = Elvis Presley in Jailhouse Rock (1957)
+| caption            = Presley in a publicity photograph for the 1957 film ''[[Jailhouse Rock (film)|Jailhouse Rock]]''
+| birth_name         = Elvis Aron Presley{{efn|name=name}}
+| birth_date         = {{Birth date|mf=yes|1935|1|8}}
+| birth_place        = [[Tupelo, Mississippi|Tupelo]], [[Mississippi]], U.S.
+| death_date         = {{Death date and age|mf=yes|1977|8|16|1935|1|8}}
+| death_place        = [[Memphis, Tennessee|Memphis]], [[Tennessee]], U.S.
+| death_cause        = [[Cardiac arrest]]
+| relatives         = [[Riley Keough]] (granddaughter)<br>[[Brandon Presley]] (second cousin)
+| resting_place      = [[Graceland]], Memphis
+| resting_place_coordinates = {{coord|35|2|46|N|90|1|23|W}}
+| works              = {{flatlist|
+* [[Elvis Presley albums discography|Albums]]
+* [[Elvis Presley singles discography|singles]]
+* [[List of songs recorded by Elvis Presley|songs recorded]]
+**[[List of songs recorded by Elvis Presley on the Sun label|Sun label]]
+* [[Elvis Presley on film and television|film and television]]
+}}
+| occupation         = {{flatlist|
+* Singer
+* actor
+}}
+| spouse             = {{marriage|[[Priscilla Presley|Priscilla Beaulieu]]|1967|1973|reason=divorced}}
+| children           = [[Lisa Marie Presley|Lisa Marie]]
+| module             = {{Infobox musical artist|embed=yes
+ | instruments   = {{flatlist|
+* Vocals
+* guitar
+* piano
+}}<!--- If you think an instrument should be listed, a discussion to reach consensus is needed first per: https://en.wikipedia.org/wiki/Template:Infobox_musical_artist#instruments--->
+ | genre        = {{flatlist|
+* [[Rock and roll]]
+* [[Pop music|pop]]
+* [[rockabilly]]
+* [[Country music|country]]
+* [[Gospel music|gospel]]
+* [[rhythm and blues|R&B]]
+* [[blues]]
+}}
+ | label        = {{flatlist|
+* [[Sun Records|Sun]]
+* [[RCA Victor]]
+* [[His Master's Voice|HMV]]
+* [[Allied Artists Music Group]]
+}}
+ | years_active = 1953–1977
+ | associated_acts = {{flatlist|
+* [[The Blue Moon Boys]]
+* [[The Jordanaires]]
+* [[TCB Band]]
+* [[The Imperials]]
+* [[Million Dollar Quartet]]
+* [[Johnny Cash]]
+* [[Jerry Lee Lewis]]
+* [[Carl Perkins]]
+* [[The Sweet Inspirations]]
+* [[Frank Sinatra]]
+* [[Hank Snow]]
+* [[Jerry Reed]]
+}}
+}}
+| awards             = {{plainlist|
+* [[Rock and Roll Hall of Fame]] (1986)
+* [[Presidential Medal of Freedom]] (2018)
+}}
+| module2            = {{Infobox military person
+| embed         = yes
+| embed_title   = Military service{{sfn|US Department of Defense|1960|}}
+| allegiance    = <!-- United States -->
+| branch        = [[United States Army]]
+| branch_label  = [[Military branch|Branch]]
+| serviceyears  = 1958–1960
+| rank          = [[Sergeant]]
+| unit          = Headquarters Company, 1st Medium Tank Battalion, [[32nd Cavalry Regiment|32d<!-- EDITORS NOTE: Please do not change to "32nd" as it would be historically inaccurate. Thank you. --> Armor]], [[3rd Armored Division (United States)|3d<!-- EDITORS NOTE: Please do not change to "3rd" as it would be historically inaccurate. Thank you. --> Armored Division]]
+| awards        = [[Good Conduct Medal (United States)|Good Conduct Medal]]
+}}
+}}
+
+'''Elvis Aaron Presley'''{{efn|name=name|Although some pronounce his surname {{IPAc-en|ˈ|p|r|ɛ|z|l|i}} {{respell|PREZ|lee}}, Presley himself pronounced it {{IPAc-en|ˈ|p|r|ɛ|s|l|i}} {{respell|PRESS|lee}}, as did his family and those who worked with him.{{sfn|Elster|2006|p=391}}<p>The correct spelling of his middle name has long been a matter of debate. The physician who delivered him wrote "Elvis Aaron Presley" in his ledger.{{sfn|Nash|2005|p=11}} The state-issued birth certificate reads "Elvis Aron Presley". The name was chosen after the Presleys' friend and fellow congregation member Aaron Kennedy, though a single-A spelling was probably intended by Presley's parents to parallel the middle name of Presley's stillborn brother, Jesse Garon.{{sfn|Guralnick|1994|p=13}} It reads Aron on most official documents produced during his lifetime, including his high school diploma, RCA Victor record contract, and marriage license, and this was generally taken to be the proper spelling.{{sfn|Adelman|2002|pp=13–15}} In 1966, Presley expressed the desire to his father that the more traditional biblical rendering, Aaron, be used henceforth, "especially on legal documents".{{sfn|Nash|2005|p=11}} Five years later, the Jaycees citation honoring him as one of the country's Outstanding Young Men used Aaron. Late in his life, he sought to officially change the spelling to Aaron and discovered that state records already listed it that way. Knowing his wishes for his middle name, Aaron is the spelling his father chose for Presley's tombstone, and it is the spelling his estate has designated as official.{{sfn|Adelman|2002|pp=13–15}}}} (January 8, 1935 – August 16, 1977), often referred to [[mononym]]ously as '''Elvis''', was an American singer and actor. Dubbed the "[[Honorific nicknames in popular music|King of Rock and Roll]]", he is regarded as [[Cultural impact of Elvis Presley|one of the most significant cultural figures of the 20th century]]. Presley's energized interpretations of songs and sexually provocative performance style, combined with a singularly potent mix of influences across color lines during a [[civil rights movement|transformative era in race relations]], led him to both great success and [[Cultural impact of Elvis Presley#Danger to American culture|initial controversy]].
+
+Presley was born in [[Tupelo, Mississippi|Tupelo]], [[Mississippi]], and relocated to [[Memphis, Tennessee|Memphis]], [[Tennessee]], with his family when he was aged 13. His music career began there in 1954, recording at [[Sun Records]] with producer [[Sam Phillips]], who wanted to bring the sound of [[African-American music]] to a wider audience. Presley, on rhythm acoustic guitar, and accompanied by lead guitarist [[Scotty Moore]] and bassist [[Bill Black]], was a pioneer of [[rockabilly]], an uptempo, [[Backbeat (music)|backbeat]]-driven fusion of [[country music]] and [[rhythm and blues]]. In 1955, drummer [[D.&nbsp;J. Fontana]] joined to complete the lineup of Presley's classic quartet and [[RCA Victor]] acquired his contract in a deal arranged by [[Colonel Tom Parker]], who would manage him for more than two decades. Presley's first RCA single, "[[Heartbreak Hotel]]", was released in January 1956 and became a number-one hit in the United States. Within a year, RCA would sell ten million Presley singles. With a series of successful network television appearances and chart-topping records, Presley became the leading figure of the newly popular sound of [[rock and roll]]; though his performative style and promotion of the then-marginalized sound of African Americans<ref name=":00" /> led to him being widely considered a threat to the moral wellbeing of [[White Americans|white American]] youth.{{sfn|Brown|Broeske|1997|p=55}}
+
+In November 1956, Presley made his film debut in ''[[Love Me Tender (film)|Love Me Tender]]''. Drafted into [[Military career of Elvis Presley|military service in 1958]], he relaunched his recording career two years later with some of his most commercially successful work. Presley held few concerts, however, and guided by Parker, proceeded to devote much of the 1960s to making [[Cinema of the United States|Hollywood films]] and soundtrack albums, most of them critically derided. Some of his most famous films included ''[[Jailhouse Rock (film)|Jailhouse Rock]]'' (1957), ''[[Blue Hawaii]]'' (1961), and ''[[Viva Las Vegas]]'' (1964). In 1968, following a seven-year break from live performances, he returned to the stage in the acclaimed television comeback special ''[[Elvis (1968 TV program)|Elvis]]'', which led to an extended [[Las Vegas]] concert residency and a string of highly profitable tours. In 1973, Presley gave the first concert by a solo artist to be broadcast around the world, ''[[Aloha from Hawaii via Satellite|Aloha from Hawaii]]''. However, years of prescription drug abuse and unhealthy eating habits severely compromised his health, and Presley died suddenly in 1977 at his [[Graceland]] estate at the age of 42.
+
+Having sold roughly 500 million records worldwide, Presley is one of the [[List of best-selling music artists|best-selling music artists]] of all time. He was commercially successful in many genres, including [[Traditional pop|pop]], country, rhythm & blues, [[adult contemporary]], and [[Gospel music|gospel]]. He won three [[Grammy Awards]], received the [[Grammy Lifetime Achievement Award]] at age 36, and has been inducted into [[List of halls of fame inducting Elvis Presley|multiple music halls of fame]]. He also holds several records, including the most [[Recording Industry Association of America|RIAA]]-certified [[RIAA certification|gold]] and platinum albums, the most albums charted on the [[Billboard 200|''Billboard'' 200]], the most number-one albums by a solo artist on the [[UK Albums Chart]], and the most number-one singles by any act on the [[UK Singles Chart]]. In 2018, Presley was posthumously awarded the [[Presidential Medal of Freedom]].
+
