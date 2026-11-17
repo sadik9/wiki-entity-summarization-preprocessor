@@ -91,17 +91,17 @@ services:
       - NEO4J_PORT=7687
       - HF_HOME=/models
       - RELIEF_RUNS_DIR=/runs
+      # which GPUs the container sees: "all", or e.g. "0" / "1" / "0,1" (RELIEF_GPUS in .env)
+      - NVIDIA_VISIBLE_DEVICES=${RELIEF_GPUS:-all}
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     volumes:
       - ${RELIEF_RUNS_PATH:-./relief-runs}:/runs
       - ${RELIEF_MODELS_PATH:-./relief-models}:/models
     shm_size: 4g
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [ gpu ]
+    # GPUs through the nvidia runtime rather than `deploy.resources.reservations.devices`: the latter goes through
+    # CDI, which fails with snap-installed Docker (as on sol: the confined daemon can't see the host paths the
+    # CDI spec lists). The runtime works there and on Docker Desktop (WSL2).
+    runtime: nvidia
     depends_on:
       neo4j:
         condition: service_healthy
