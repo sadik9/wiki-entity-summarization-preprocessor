@@ -72,6 +72,52 @@ def _work(task) -> tuple[int, int]:
     return pages, len(counts)
 
 
+def repair_title(title: str) -> str:
+    """Undo UTF-8 text that was read as Latin-1 ("SÃ£o" -> "São"); titles that don't round-trip stay as they are."""
+    if title.isascii():
+        return title
+    try:
+        return title.encode("latin-1").decode("utf-8")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return title
+
+
+def build_titles(settings: Settings) -> dict:
+    """relief_titles(title, wikidata_id, page_id, is_article): every article and redirect title with its QID.
+
+    In the restored 2023 database ~0.4% of the mapping table's titles are garbled (UTF-8 read as Latin-1, e.g.
+    "AssociaÃ§Ã£o_Desportiva_SÃ£o_Caetano"). Article titles therefore come from wikipedia_pages, which is always
+    correct; redirect titles are repaired with repair_title().
+    """
+    start = time.time()
+    with pg_connect(settings) as pg, pg.cursor() as cursor:
+        cursor.execute("DROP TABLE IF EXISTS relief_titles")
+        cursor.execute(
+            "CREATE TABLE relief_titles AS SELECT wp.title, m.wikidata_id, wp.id AS page_id, true AS is_article "
+            "FROM wiki_page_to_wiki_data_mappings m JOIN wikipedia_pages wp ON wp.id = m.wikipedia_id "
+            "WHERE m.wikidata_id IS NOT NULL")
+        with pg.cursor(name="redirect_titles") as redirects:
+            redirects.itersize = 100_000
+            redirects.execute(
+                "SELECT m.wikipedia_title, m.wikidata_id, m.wikipedia_id FROM wiki_page_to_wiki_data_mappings m "
+                "WHERE m.wikidata_id IS NOT NULL AND NOT EXISTS (SELECT 1 FROM wikipedia_pages wp WHERE wp.id = m.wikipedia_id)")
+            repaired, buffer = 0, io.StringIO()
+            for title, qid, page_id in redirects:
+                fixed = repair_title(title)
+                repaired += fixed != title
+                buffer.write(f"{_tsv(fixed)}\t{qid}\t{page_id}\tf\n")
+        buffer.seek(0)
+        cursor.copy_expert("COPY relief_titles (title, wikidata_id, page_id, is_article) FROM STDIN", buffer)
+        cursor.execute("CREATE INDEX relief_titles_title ON relief_titles (title)")
+        cursor.execute("CREATE INDEX relief_titles_qid ON relief_titles (wikidata_id)")
+        cursor.execute("SELECT count(*) FILTER (WHERE is_article), count(*) FILTER (WHERE NOT is_article) FROM relief_titles")
+        articles, redirect_count = cursor.fetchone()
+        cursor.execute("ANALYZE relief_titles")
+        pg.commit()
+    return {"articles": articles, "redirects": redirect_count, "redirects_repaired": repaired,
+            "seconds": round(time.time() - start)}
+
+
 def build(settings: Settings, workers: int = 16, pages_per_task: int = 20_000, max_pages: int | None = None,
           aggregate_workers: int = 0, aggregate_mem: str = "256MB") -> dict:
     """aggregate_workers/aggregate_mem: Postgres parallel workers and work_mem for the final GROUP BY. Each
@@ -79,6 +125,9 @@ def build(settings: Settings, workers: int = 16, pages_per_task: int = 20_000, m
     aggregate_workers x aggregate_mem below its shm_size (laptop 1g: serial; sol 8g: e.g. 8 x 512MB)."""
     start = time.time()
     with pg_connect(settings) as pg, pg.cursor() as cursor:
+        cursor.execute("SELECT to_regclass('relief_titles') IS NOT NULL")
+        if not cursor.fetchone()[0]:
+            raise RuntimeError("relief_titles is missing: run `relief titles build` first")
         cursor.execute("DROP TABLE IF EXISTS relief_anchor_raw")
         cursor.execute("CREATE UNLOGGED TABLE relief_anchor_raw (target_title text, surface text, n integer)")
         cursor.execute("SELECT id FROM wikipedia_pages ORDER BY id")
@@ -102,8 +151,8 @@ def build(settings: Settings, workers: int = 16, pages_per_task: int = 20_000, m
         cursor.execute(
             "CREATE TABLE relief_anchors AS "
             "SELECT r.surface, m.wikidata_id, sum(r.n)::bigint AS n "
-            "FROM relief_anchor_raw r JOIN wiki_page_to_wiki_data_mappings m ON m.wikipedia_title = r.target_title "
-            "WHERE m.wikidata_id IS NOT NULL GROUP BY r.surface, m.wikidata_id")
+            "FROM relief_anchor_raw r JOIN relief_titles m ON m.title = r.target_title "
+            "GROUP BY r.surface, m.wikidata_id")
         cursor.execute("CREATE INDEX relief_anchors_surface ON relief_anchors (surface)")
         cursor.execute("CREATE INDEX relief_anchors_surface_lower ON relief_anchors (lower(surface))")
         cursor.execute("CREATE INDEX relief_anchors_qid ON relief_anchors (wikidata_id)")

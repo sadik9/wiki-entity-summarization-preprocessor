@@ -36,6 +36,17 @@ KEEP_TEXT = {
     "lang": 2, "langx": 2, "script": -1, "linktext": 1, "nbsp": " ", "spnd": " – ", "snd": " – ",
     "spaced ndash": " – ", "ndash": "–", "mdash": "—", "en dash": "–", "em dash": "—",
 }
+FLAG_TEMPLATES = {"flag", "flagu", "flagcountry", "flag country"}
+# never visible evidence, even inside an infobox: citations and notes, dates (literals, not graph edges), images
+NEVER_TEXT = {"efn", "efn-ua", "efn-lr", "refn", "sfn", "sfnp", "sfnm", "r", "rp", "ref", "notetag", "citation",
+              "harvnb", "harvp", "harv", "coord", "flagicon", "flagdeco", "url", "official website", "small image",
+              "nbsp", "hidden", "tooltip", "abbr link"}
+
+
+def _never_text(name: str) -> bool:
+    return name in NEVER_TEXT or name.startswith("cite") or "date" in name or name.endswith(" age") or         name.startswith("infobox") or name.startswith("sfn")
+
+
 INFOBOX_SKIP_FIELDS = {"image", "image_size", "imagesize", "image_upright", "upright", "alt", "caption", "signature",
                        "signature_alt", "signature_size", "website", "url", "module", "embed", "child", "landscape",
                        "background", "logo", "logo_size", "logo_alt", "logo_caption", "honorific_prefix",
@@ -98,8 +109,9 @@ def _positional(template: Template) -> list:
 class _Renderer:
     """Renders wikicode to text with link markers; links are collected by id."""
 
-    def __init__(self):
+    def __init__(self, infobox: bool = False):
         self.links: list[tuple[str, str]] = []     # (target, anchor) by id
+        self.infobox = infobox                      # inside an infobox field: unknown templates keep their text
 
     def render(self, code) -> str:
         return "".join(self._node(node) for node in code.nodes)
@@ -160,6 +172,16 @@ class _Renderer:
                 return anchor
             self.links.append((target, anchor))
             return f"{_OPEN}{len(self.links) - 1}{_MID}{anchor}{_CLOSE}"
+        if name in FLAG_TEMPLATES:
+            params = _positional(template)
+            if not params:
+                return ""
+            country = str(params[0].value).strip()
+            target = normalize_title(country)
+            if target is None:
+                return country
+            self.links.append((target, country))
+            return f"{_OPEN}{len(self.links) - 1}{_MID}{country}{_CLOSE}"
         if name in {"convert", "cvt"}:
             params = _positional(template)
             return " ".join(str(p.value).strip() for p in params[:2])
@@ -168,6 +190,10 @@ class _Renderer:
             return "c. " + (self.render(params[0].value) if params else "")
         rule = KEEP_TEXT.get(name)
         if rule is None:
+            if self.infobox and not _never_text(name):
+                # e.g. {{Medal|Gold|[[2013 World Championships in Athletics|2013 Moscow]]|[[... hammer throw|Hammer throw]]}}
+                parts = (self.render(p.value).strip() for p in _positional(template))
+                return " ".join(p for p in parts if p)
             return ""
         if isinstance(rule, str):
             return rule
@@ -227,8 +253,8 @@ def _clean(marked: str, keep_newlines: bool) -> str:
     return marked.strip()
 
 
-def render(code, keep_newlines: bool = False) -> tuple[str, list[Link]]:
-    renderer = _Renderer()
+def render(code, keep_newlines: bool = False, infobox: bool = False) -> tuple[str, list[Link]]:
+    renderer = _Renderer(infobox)
     marked = renderer.render(code if hasattr(code, "nodes") else mwp.parse(code))
     return _finish(_clean(marked, keep_newlines), renderer.links)
 
@@ -266,7 +292,7 @@ def _infobox_fields(template: Template) -> list[InfoboxField]:
             continue
         items = []
         for item_code in _field_items(param.value):
-            text, links = render(item_code)
+            text, links = render(item_code, infobox=True)
             if text:
                 items.append((text, links))
         if items:

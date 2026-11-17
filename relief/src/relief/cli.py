@@ -22,6 +22,13 @@ def _check(args, settings: Settings) -> int:
     return 0 if all(r.ok for r in results) else 1
 
 
+def _titles_build(args, settings: Settings) -> int:
+    from relief.anchors import build_titles
+
+    print(json.dumps(build_titles(settings), indent=2))
+    return 0
+
+
 def _anchors_build(args, settings: Settings) -> int:
     from relief.anchors import build
 
@@ -54,6 +61,10 @@ def build_parser() -> argparse.ArgumentParser:
     check.add_argument("--only", nargs="+", choices=["runtime", "postgres", "neo4j"], help="run only these checks")
     check.add_argument("--json", action="store_true", help="print the results as JSON")
     check.set_defaults(handler=_check)
+
+    titles = commands.add_parser("titles", help="clean title -> QID table (relief_titles); needed by everything else")
+    titles_commands = titles.add_subparsers(dest="titles_command", required=True)
+    titles_commands.add_parser("build", help="(re)build relief_titles").set_defaults(handler=_titles_build)
 
     anchors = commands.add_parser("anchors", help="anchor-text dictionary (relief_anchors table)")
     anchors_commands = anchors.add_subparsers(dest="anchors_command", required=True)

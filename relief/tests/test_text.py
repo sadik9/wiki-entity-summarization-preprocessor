@@ -85,3 +85,19 @@ def test_infobox_is_not_part_of_the_prose():
 def test_page_links_cover_the_whole_page():
     links = page_links("Intro [[Graceland]].\n== Life ==\nLater [[Jailhouse Rock (film)|Jailhouse Rock]].")
     assert links == [("Graceland", "Graceland"), ("Jailhouse Rock", "Jailhouse_Rock_(film)")]
+
+
+def test_infobox_templates_keep_their_links_but_dates_and_notes_do_not():
+    text, links = render("{{Medal|Gold|[[2013 World Championships in Athletics|2013 Moscow]]|[[Hammer throw]]}}",
+                         infobox=True)
+    assert text == "Gold 2013 Moscow Hammer throw"
+    assert [l.target for l in links] == ["2013_World_Championships_in_Athletics", "Hammer_throw"]
+    text, links = render("{{birth date and age|1985|8|8}} in [[Rawicz]]{{efn|see [[Note]]}}", infobox=True)
+    assert text == "in Rawicz" and [l.target for l in links] == ["Rawicz"]
+    # in prose, unknown templates stay dropped
+    assert render("{{Medal|Gold|[[A]]}} text")[0] == "text"
+
+
+def test_flag_templates_link_their_country():
+    text, links = render("{{flagu|Great Britain}}", infobox=True)
+    assert text == "Great Britain" and links[0].target == "Great_Britain"

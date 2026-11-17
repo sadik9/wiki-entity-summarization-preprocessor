@@ -31,3 +31,11 @@ def test_policy_exclusions():
     assert exclusion_reason("Elvis Presley", "P921", "x", {"Q1371849"}, False) == "list_like"
     assert exclusion_reason("Elvis Presley", "P971", "Category:x", {"Q4167836"}, False) == "wikimedia_internal"
     assert exclusion_reason("Elvis Presley", "P26", "Q303", set(), True) == "self_loop"
+
+
+def test_repair_title_undoes_utf8_read_as_latin1_and_leaves_good_titles_alone():
+    from relief.anchors import repair_title
+    assert repair_title("AssociaÃ§Ã£o_Desportiva_SÃ£o_Caetano") == "Associação_Desportiva_São_Caetano"
+    assert repair_title("Danuta_WaÅ\x82Ä\x99sa") == "Danuta_Wałęsa"
+    assert repair_title("AD_São_Caetano") == "AD_São_Caetano"
+    assert repair_title("Elvis_Presley") == "Elvis_Presley"

@@ -87,11 +87,11 @@ class KnowledgeBase:
             "SELECT property_id, property_label, description FROM predicates WHERE property_id = ANY(%s)", pids)}
 
     def titles(self, qids) -> dict[str, tuple[str | None, list[str]]]:
-        """qid -> (article title, redirect titles), from the page<->QID mapping."""
+        """qid -> (article title, redirect titles), from relief_titles (see anchors.build_titles)."""
         result: dict[str, tuple[str | None, list[str]]] = {}
         for qid, title, is_article in self._query(
-                "SELECT m.wikidata_id, m.wikipedia_title, wp.id IS NOT NULL FROM wiki_page_to_wiki_data_mappings m "
-                "LEFT JOIN wikipedia_pages wp ON wp.id = m.wikipedia_id WHERE m.wikidata_id = ANY(%s)", qids):
+                "SELECT wikidata_id, title, is_article FROM relief_titles WHERE wikidata_id = ANY(%s) "
+                "ORDER BY wikidata_id, page_id", qids):
             article, redirects = result.get(qid, (None, []))
             if is_article and article is None:
                 article = title
@@ -103,8 +103,7 @@ class KnowledgeBase:
     def resolve_titles(self, titles) -> dict[str, str]:
         """Wikipedia title (article or redirect) -> QID."""
         return {t: q for t, q in self._query(
-            "SELECT wikipedia_title, wikidata_id FROM wiki_page_to_wiki_data_mappings "
-            "WHERE wikipedia_title = ANY(%s) AND wikidata_id IS NOT NULL", titles)}
+            "SELECT title, wikidata_id FROM relief_titles WHERE title = ANY(%s) ORDER BY is_article", titles)}
 
     def anchors_available(self) -> dict | None:
         """Build provenance of the anchor dictionary, or None when it hasn't been built in this database."""
