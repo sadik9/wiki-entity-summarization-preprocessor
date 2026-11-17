@@ -1,0 +1,21 @@
+{
+  "instances_in_run": 3064,
+  "sampled": 1030,
+  "calibration": 30,
+  "overlap": 300,
+  "single_A": 350,
+  "single_B": 350,
+  "per_stratum": {
+    "infobox/link/multi/relation": 154,
+    "infobox/link/single/relation": 107,
+    "infobox/unlinked/multi/relation": 36,
+    "infobox/unlinked/single/naming": 69,
+    "infobox/unlinked/single/relation": 65,
+    "prose/link/multi/relation": 198,
+    "prose/link/single/relation": 145,
+    "prose/unlinked/multi/relation": 76,
+    "prose/unlinked/single/naming": 56,
+    "prose/unlinked/single/relation": 124
+  },
+  "seed": 2026
+}
