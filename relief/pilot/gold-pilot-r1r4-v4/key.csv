@@ -1,0 +1,1030 @@
+item_id,set,root,subject,predicate,object,unit,stratum,mention_rule,in_original_gt
+G0001,calibration,Q26876,Q26876,P101,Q83440,s4,prose/unlinked/multi/relation,unique,True
+G0002,calibration,Q1426,Q25344123,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|wimbledonresult",infobox/link/multi/relation,link,False
+G0003,calibration,Q449013,Q449013,P108,Q13973,s0,prose/link/single/relation,link,True
+G0004,calibration,Q34389,Q34389,P136,Q131272,s3,prose/unlinked/single/relation,unique,True
+G0005,calibration,Q1426,Q1426,P2522,Q782420,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|australianopenresult",infobox/link/multi/relation,link,True
+G0006,calibration,Q15935,Q15935,P136,Q11401,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0007,calibration,Q6399,Q14524177,P1346,Q6399,ib:infobox sportsperson|medaltemplates,infobox/link/single/relation,link,True
+G0008,calibration,Q168040,Q168040,P735,Q1390433,ib:infobox writer|birth_name,infobox/unlinked/single/naming,naming,False
+G0009,calibration,Q180383,Q180383,P106,Q82955,s0,prose/unlinked/single/relation,unique,False
+G0010,calibration,Q39212,Q39212,P19,Q488125,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|birth_place,infobox/link/multi/relation,link,True
+G0011,calibration,Q134958,Q134958,P800,Q2658157,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|notableworks,infobox/link/multi/relation,link,False
+G0012,calibration,Q483577,Q483577,P734,Q10281657,ib:infobox football biography|fullname,infobox/unlinked/single/naming,naming,True
+G0013,calibration,Q7542,Q7542,P136,Q164444,s4,prose/link/single/relation,link,True
+G0014,calibration,Q25973,Q25973,P800,Q217073,s1,prose/link/multi/relation,link,False
+G0015,calibration,Q107006,Q698111,P161,Q107006,s7,prose/link/single/relation,link,True
+G0016,calibration,Q908933,Q908933,P136,Q58339,s1,prose/link/single/relation,link,True
+G0017,calibration,Q438939,Q438939,P1344,Q8577,s23,prose/link/single/relation,link,True
+G0018,calibration,Q43203,Q5479089,P22,Q43203,ib:infobox officeholder|children,infobox/link/multi/relation,link,True
+G0019,calibration,Q47087,Q47087,P136,Q24925,s5,prose/unlinked/multi/relation,unique,False
+G0020,calibration,Q55800,Q55800,P101,Q6498453,s9,prose/unlinked/single/relation,unique,True
+G0021,calibration,Q9161,Q9161,P734,Q41769471,s0,prose/unlinked/single/naming,naming,False
+G0022,calibration,Q131545,Q131545,P27,Q28513,ib:infobox person|birth_place,infobox/link/single/relation,link,True
+G0023,calibration,Q41223,Q41223,P20,Q593888,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|death_place,infobox/link/single/relation,link,True
+G0024,calibration,Q41173,Q41173,P101,Q27939,ib:infobox musical artist|instrument,infobox/unlinked/single/relation,unique,False
+G0025,calibration,Q7542,Q7542,P106,Q183945,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0026,calibration,Q15935,Q15935,P800,Q13378144,ib:infobox person|other_names,infobox/unlinked/multi/relation,unique,False
+G0027,calibration,Q25078,Q23395,P58,Q25078,s1,prose/link/multi/relation,link,False
+G0028,calibration,Q180383,Q180383,P102,Q1048192,s3,prose/link/single/relation,link,True
+G0029,calibration,Q229507,Q6788484,P26,Q229507,ib:infobox person|spouse,infobox/link/multi/relation,link,False
+G0030,calibration,Q6882,Q6882,P800,Q6507,ib:infobox writer|notableworks,infobox/link/multi/relation,link,False
+G0031,overlap,Q1426,Q1426,P2522,Q836815,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|usopenresult",infobox/link/multi/relation,link,True
+G0032,overlap,Q229507,Q229507,P166,Q1131356,ib:infobox person|awards,infobox/link/single/relation,link,True
+G0033,overlap,Q357102,Q357102,P102,Q29552,ib:infobox officeholder|party,infobox/link/single/relation,link,True
+G0034,overlap,Q1426,Q1426,P286,Q1968483,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|coach",infobox/link/single/relation,link,True
+G0035,overlap,Q438939,Q438939,P54,Q2945914,ib:infobox football biography|clubs1,infobox/link/single/relation,link,True
+G0036,overlap,Q19155,Q19155,P101,Q11424,s17,prose/unlinked/single/relation,unique,False
+G0037,overlap,Q1426,Q1202961,P710,Q1426,s7,prose/link/single/relation,link,True
+G0038,overlap,Q11998,Q11998,P735,Q558067,s0,prose/unlinked/single/naming,naming,False
+G0039,overlap,Q444,Q444,P734,Q18374998,s0,prose/unlinked/single/naming,naming,False
+G0040,overlap,Q34389,Q576934,P175,Q34389,s23,prose/link/single/relation,link,True
+G0041,overlap,Q549981,Q549981,P22,Q103774,ib:infobox musical artist|associated_acts,infobox/link/multi/relation,link,True
+G0042,overlap,Q180383,Q180383,P27,Q664,ib:infobox officeholder|parliament8,infobox/unlinked/single/relation,unique,False
+G0043,overlap,Q134958,Q134958,P20,Q656,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|death_place,infobox/link/multi/relation,link,True
+G0044,overlap,Q34389,Q34389,P106,Q33999,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0045,overlap,Q6882,Q444609,P451,Q6882,ib:infobox writer|spouse,infobox/link/multi/relation,link,False
+G0046,overlap,Q168040,Q168040,P27,Q31,s0,prose/unlinked/single/relation,unique,False
+G0047,overlap,Q483577,Q483577,P54,Q290940,s12,prose/link/single/relation,link,True
+G0048,overlap,Q26876,Q37912621,P676,Q26876,s8,prose/link/multi/relation,link,True
+G0049,overlap,Q15935,Q62766,P1327,Q15935,s8,prose/link/multi/relation,link,False
+G0050,overlap,Q41173,Q41173,P106,Q33999,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0051,overlap,Q7542,Q2333874,P112,Q7542,ib:infobox musical artist|label,infobox/link/multi/relation,link,False
+G0052,overlap,Q44467,Q44467,P39,Q19969187,s9,prose/link/single/relation,link,True
+G0053,overlap,Q26876,Q26876,P1411,Q904528,s16,prose/link/multi/relation,link,False
+G0054,overlap,Q357102,Q357102,P241,Q1752901,ib:infobox officeholder|branch,infobox/link/single/relation,link,True
+G0055,overlap,Q7374,Q110043,P161,Q7374,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0056,overlap,Q11998,Q11998,P106,Q33999,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0057,overlap,Q39212,Q5353161,P26,Q39212,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|spouses,infobox/link/multi/relation,link,True
+G0058,overlap,Q7315,Q763716,P86,Q7315,s2,prose/link/single/relation,link,True
+G0059,overlap,Q36301,Q36301,P734,Q41581925,s0,prose/unlinked/single/naming,naming,False
+G0060,overlap,Q7542,Q1754021,P86,Q7542,s8,prose/link/multi/relation,link,True
+G0061,overlap,Q41173,Q41173,P3373,Q235682,ib:infobox person|relatives,infobox/link/multi/relation,link,True
+G0062,overlap,Q55800,Q55800,P551,Q1297,s8,prose/unlinked/single/relation,unique,True
+G0063,overlap,Q7542,Q1187787,P162,Q7542,s11,prose/link/multi/relation,link,True
+G0064,overlap,Q6882,Q459592,P50,Q6882,ib:infobox writer|notableworks,infobox/link/multi/relation,link,True
+G0065,overlap,Q908933,Q908933,P27,Q30,ib:infobox musical artist|birth_place,infobox/unlinked/single/relation,unique,False
+G0066,overlap,Q357102,Q357102,P945,Q30,ib:infobox officeholder|allegiance,infobox/unlinked/multi/relation,unique,False
+G0067,overlap,Q43203,Q1939405,P161,Q43203,s4,prose/link/single/relation,link,True
+G0068,overlap,Q319591,Q4451380,P1346,Q319591,s12,prose/link/single/relation,link,True
+G0069,overlap,Q256380,Q256380,P106,Q43845,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0070,overlap,Q256380,Q5582400,P488,Q256380,s7,prose/link/single/relation,link,True
+G0071,overlap,Q43203,Q104137,P57,Q43203,s8,prose/link/multi/relation,link,False
+G0072,overlap,Q1426,Q46993124,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|australianopenresult",infobox/link/multi/relation,link,False
+G0073,overlap,Q11998,Q11998,P264,Q2891955,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0074,overlap,Q5432,Q1988253,P170,Q5432,s20,prose/link/single/relation,link,True
+G0075,overlap,Q5432,Q5432,P735,Q47484032,s0,prose/unlinked/single/naming,naming,False
+G0076,overlap,Q168040,Q168040,P166,Q3404835,ib:infobox writer|awards,infobox/link/single/relation,link,True
+G0077,overlap,Q36322,Q36322,P800,Q477508,s5,prose/link/multi/relation,link,False
+G0078,overlap,Q168040,Q168040,P734,Q18039959,ib:infobox writer|name,infobox/unlinked/single/naming,naming,False
+G0079,overlap,Q438939,Q438939,P735,Q16420967,ib:infobox football biography|fullname,infobox/unlinked/single/naming,naming,False
+G0080,overlap,Q319591,Q21821246,P1346,Q319591,s1,prose/link/multi/relation,link,False
+G0081,overlap,Q7315,Q7315,P101,Q638,s19,prose/unlinked/single/relation,unique,False
+G0082,overlap,Q7542,Q7542,P551,Q1992901,s15,prose/link/multi/relation,link,False
+G0083,overlap,Q15935,Q1343378,P175,Q15935,s8,prose/link/multi/relation,link,False
+G0084,overlap,Q6399,Q6399,P734,Q42846316,s0,prose/unlinked/single/naming,naming,False
+G0085,overlap,Q56008,Q278997,P57,Q56008,s2,prose/link/multi/relation,link,True
+G0086,overlap,Q7542,Q7542,P106,Q183945,s3,prose/unlinked/single/relation,commonness,False
+G0087,overlap,Q444,Q444,P463,Q1003,s6,prose/unlinked/multi/relation,unique,False
+G0088,overlap,Q7374,Q2526255,P5869,Q7374,ib:infobox person|occupation,infobox/unlinked/multi/relation,unique,False
+G0089,overlap,Q51545,Q51545,P1950,Q47246523,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0090,overlap,Q36322,Q333179,P50,Q36322,s5,prose/link/multi/relation,link,True
+G0091,overlap,Q41223,Q41223,P735,Q39314414,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|name,infobox/unlinked/single/naming,naming,False
+G0092,overlap,Q7374,Q7374,P734,Q16870804,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0093,overlap,Q15935,Q15935,P264,Q1153032,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0094,overlap,Q15935,Q15935,P735,Q105623434,ib:infobox person|other_names,infobox/unlinked/single/naming,naming,False
+G0095,overlap,Q254395,Q254395,P135,Q6034,ib:infobox artist|movement,infobox/link/multi/relation,link,False
+G0096,overlap,Q168040,Q168040,P511,Q165503,s4,prose/link/single/relation,link,True
+G0097,overlap,Q41173,Q41173,P27,Q30,s12,prose/unlinked/single/relation,unique,False
+G0098,overlap,Q42581,Q42581,P735,Q6383805,s0,prose/unlinked/single/naming,naming,False
+G0099,overlap,Q168040,Q168040,P735,Q1094751,ib:infobox writer|birth_name,infobox/unlinked/single/naming,naming,False
+G0100,overlap,Q15935,Q24807232,P175,Q15935,ib:infobox person|other_names,infobox/unlinked/single/relation,unique,False
+G0101,overlap,Q11998,Q794270,P175,Q11998,s6,prose/link/single/relation,link,True
+G0102,overlap,Q357102,Q357102,P27,Q30,s6,prose/unlinked/multi/relation,unique,False
+G0103,overlap,Q319591,Q319591,P2522,Q40291282,s16,prose/link/multi/relation,link,False
+G0104,overlap,Q26876,Q104092599,P175,Q26876,s10,prose/link/multi/relation,link,False
+G0105,overlap,Q15935,Q15935,P735,Q2023151,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0106,overlap,Q15935,Q66829260,P162,Q15935,s6,prose/link/multi/relation,link,True
+G0107,overlap,Q5432,Q1163663,P170,Q5432,s19,prose/link/multi/relation,link,False
+G0108,overlap,Q256380,Q256380,P69,Q49108,ib:infobox person|education,infobox/link/single/relation,link,True
+G0109,overlap,Q7542,Q1436550,P175,Q7542,s6,prose/link/multi/relation,link,False
+G0110,overlap,Q7542,Q7542,P264,Q2333874,ib:infobox musical artist|label,infobox/link/multi/relation,link,True
+G0111,overlap,Q438939,Q438939,P54,Q751670,s12,prose/unlinked/single/relation,unique,True
+G0112,overlap,Q51545,Q2357585,P58,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0113,overlap,Q256380,Q256380,P69,Q41506,ib:infobox person|education,infobox/link/single/relation,link,True
+G0114,overlap,Q47087,Q47087,P19,Q1020217,ib:infobox writer|birth_place,infobox/link/single/relation,link,True
+G0115,overlap,Q1426,Q1808301,P1346,Q1426,s16,prose/link/single/relation,link,True
+G0116,overlap,Q449013,Q449013,P734,Q37501417,s0,prose/unlinked/single/naming,naming,False
+G0117,overlap,Q7315,Q7315,P800,Q372907,s2,prose/link/multi/relation,link,False
+G0118,overlap,Q5432,Q5432,P19,Q1372769,ib:infobox artist|birth_place,infobox/link/single/relation,link,True
+G0119,overlap,Q36322,Q36322,P19,Q1231836,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]]. -->|birth_place,infobox/link/single/relation,link,True
+G0120,overlap,Q15935,Q15935,P735,Q6365863,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0121,overlap,Q131545,Q131545,P20,Q12439,ib:infobox person|death_place,infobox/link/single/relation,link,False
+G0122,overlap,Q26876,Q26876,P136,Q2280497,s5,prose/link/single/relation,link,True
+G0123,overlap,Q43203,Q18932313,P26,Q43203,ib:infobox officeholder|spouse,infobox/unlinked/multi/relation,unique,False
+G0124,overlap,Q7542,Q7542,P1303,Q46185,ib:infobox musical artist|instruments,infobox/unlinked/single/relation,unique,False
+G0125,overlap,Q5432,Q5432,P39,Q984276,s8,prose/unlinked/single/relation,unique,True
+G0126,overlap,Q1426,Q1426,P641,Q847,s14,prose/unlinked/single/relation,unique,True
+G0127,overlap,Q449013,Q3324221,P371,Q449013,s0,prose/link/multi/relation,link,True
+G0128,overlap,Q56008,Q56008,P106,Q28389,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0129,overlap,Q483577,Q483577,P1532,Q155,s6,prose/unlinked/multi/relation,unique,False
+G0130,overlap,Q108366,Q525777,P175,Q108366,s11,prose/link/single/relation,link,True
+G0131,overlap,Q56008,Q56008,P451,Q242015,s3,prose/link/multi/relation,link,False
+G0132,overlap,Q434839,Q434839,P69,Q49115,ib:infobox scientist|education,infobox/link/single/relation,link,True
+G0133,overlap,Q7374,Q204212,P161,Q7374,s11,prose/unlinked/multi/relation,unique,False
+G0134,overlap,Q47087,Q47087,P734,Q1095787,s0,prose/unlinked/single/naming,naming,False
+G0135,overlap,Q47087,Q47087,P734,Q1095787,ib:infobox writer|birth_name,infobox/unlinked/single/naming,naming,False
+G0136,overlap,Q1426,Q3983540,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|masterscupresult",infobox/link/single/relation,link,True
+G0137,overlap,Q254220,Q254220,P735,Q61788182,ib:infobox gymnast|full_name,infobox/unlinked/single/naming,naming,False
+G0138,overlap,Q15935,Q13378144,P175,Q15935,ib:infobox person|other_names,infobox/unlinked/multi/relation,unique,True
+G0139,overlap,Q15935,Q15935,P136,Q180268,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0140,overlap,Q444,Q673527,P726,Q444,s1,prose/link/multi/relation,link,False
+G0141,overlap,Q26876,Q104092260,P162,Q26876,s10,prose/link/multi/relation,link,True
+G0142,overlap,Q25973,Q25973,P106,Q49757,s0,prose/unlinked/single/relation,unique,False
+G0143,overlap,Q42581,Q902672,P161,Q42581,s9,prose/link/single/relation,link,True
+G0144,overlap,Q43203,Q65058737,P162,Q43203,s10,prose/link/multi/relation,link,True
+G0145,overlap,Q41223,Q41223,P106,Q36180,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|occupation,infobox/unlinked/single/relation,unique,False
+G0146,overlap,Q11998,Q11998,P27,Q408,ib:infobox person|birth_place,infobox/unlinked/single/relation,unique,False
+G0147,overlap,Q25078,Q25078,P106,Q266569,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0148,overlap,Q42581,Q42581,P25,Q449569,s3,prose/link/multi/relation,link,True
+G0149,overlap,Q7374,Q504961,P58,Q7374,s7,prose/link/multi/relation,link,False
+G0150,overlap,Q6882,Q6882,P937,Q72,ib:infobox writer|death_place,infobox/link/multi/relation,link,False
+G0151,overlap,Q319591,Q319591,P1344,Q26878348,s16,prose/link/multi/relation,link,False
+G0152,overlap,Q233332,Q233332,P27,Q1183,s5,prose/unlinked/single/relation,unique,False
+G0153,overlap,Q483577,Q483577,P54,Q1543,ib:infobox football biography|clubs7,infobox/link/single/relation,link,True
+G0154,overlap,Q41223,Q213596,P40,Q41223,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|parents,infobox/link/multi/relation,link,False
+G0155,overlap,Q1426,Q1426,P27,Q39,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|residence",infobox/unlinked/multi/relation,unique,False
+G0156,overlap,Q108366,Q108366,P26,Q5607657,ib:infobox person|spouse,infobox/unlinked/multi/relation,unique,False
+G0157,overlap,Q23891,Q23891,P551,Q84,s14,prose/unlinked/single/relation,unique,False
+G0158,overlap,Q229507,Q229507,P27,Q30,ib:infobox person|birth_place,infobox/unlinked/single/relation,unique,False
+G0159,overlap,Q229507,Q229507,P106,Q728711,s0,prose/link/single/relation,link,True
+G0160,overlap,Q11998,Q11998,P136,Q211756,s5,prose/unlinked/single/relation,unique,True
+G0161,overlap,Q43203,Q43203,P1303,Q5994,ib:infobox musical artist|instrument,infobox/unlinked/single/relation,unique,False
+G0162,overlap,Q43203,Q43203,P166,Q102427,s8,prose/link/multi/relation,link,True
+G0163,overlap,Q7315,Q212776,P86,Q7315,s2,prose/link/multi/relation,link,True
+G0164,overlap,Q23891,Q23891,P166,Q181883,s11,prose/link/single/relation,link,True
+G0165,overlap,Q26876,Q26876,P1303,Q258896,ib:infobox musical artist|instrument,infobox/unlinked/single/relation,unique,False
+G0166,overlap,Q7374,Q110043,P161,Q7374,s13,prose/link/multi/relation,link,False
+G0167,overlap,Q36322,Q36322,P1412,Q1860,s0,prose/unlinked/multi/relation,commonness,False
+G0168,overlap,Q41173,Q38056883,P175,Q41173,s8,prose/unlinked/single/relation,type_cue,False
+G0169,overlap,Q134958,Q134958,P800,Q2658157,s0,prose/unlinked/multi/relation,one_sense,False
+G0170,overlap,Q36301,Q36301,P734,Q41581925,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0171,overlap,Q43682,Q43682,P54,Q994701,ib:infobox football biography|clubs1,infobox/link/single/relation,link,True
+G0172,overlap,Q256380,Q256380,P734,Q20165754,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0173,overlap,Q15935,Q15935,P106,Q2252262,s2,prose/unlinked/single/relation,unique,False
+G0174,overlap,Q15935,Q1130097,P162,Q15935,s4,prose/link/multi/relation,link,True
+G0175,overlap,Q319591,Q319591,P551,Q3870,ib:infobox cyclist|birth_place,infobox/link/multi/relation,link,False
+G0176,overlap,Q180383,Q180383,P735,Q13376892,s0,prose/unlinked/single/naming,naming,False
+G0177,overlap,Q42581,Q5925855,P26,Q42581,ib:infobox person|spouse,infobox/link/multi/relation,link,False
+G0178,overlap,Q107006,Q107006,P19,Q3572,s1,prose/link/single/relation,link,True
+G0179,overlap,Q319591,Q219414,P2321,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,True
+G0180,overlap,Q168040,Q168040,P166,Q918719,ib:infobox writer|awards,infobox/link/single/relation,link,True
+G0181,overlap,Q44467,Q207698,P161,Q44467,s3,prose/link/single/relation,link,True
+G0182,overlap,Q444,Q444,P27,Q36,ib:infobox officeholder|birth_place,infobox/link/multi/relation,link,True
+G0183,overlap,Q25078,Q22240704,P26,Q25078,ib:infobox person|spouse,infobox/link/multi/relation,link,False
+G0184,overlap,Q9161,Q9161,P39,Q24944203,ib:infobox officeholder|office,infobox/link/single/relation,link,True
+G0185,overlap,Q41223,Q41223,P6886,Q7737,s0,prose/unlinked/multi/relation,unique,True
+G0186,overlap,Q483577,Q483577,P27,Q155,ib:infobox football biography|birth_place,infobox/unlinked/multi/relation,unique,False
+G0187,overlap,Q43682,Q43682,P19,Q1726,ib:infobox football biography|youthclubs1,infobox/unlinked/single/relation,unique,True
+G0188,overlap,Q25078,Q25078,P106,Q245068,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0189,overlap,Q256380,Q20165781,P26,Q256380,ib:infobox person|spouse,infobox/unlinked/multi/relation,unique,False
+G0190,overlap,Q7374,Q110043,P57,Q7374,ib:infobox person|notable_works,infobox/link/multi/relation,link,True
+G0191,overlap,Q256380,Q256380,P793,Q19868151,s11,prose/link/multi/relation,link,False
+G0192,overlap,Q434839,Q434839,P101,Q133080,s0,prose/link/single/relation,link,True
+G0193,overlap,Q180383,Q180383,P27,Q664,s0,prose/unlinked/single/relation,unique,False
+G0194,overlap,Q1426,Q1426,P741,Q14420039,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|plays",infobox/unlinked/single/relation,unique,False
+G0195,overlap,Q319591,Q15731116,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/single/relation,link,True
+G0196,overlap,Q7374,Q129895,P57,Q7374,s13,prose/link/multi/relation,link,True
+G0197,overlap,Q5432,Q5432,P551,Q2344241,s20,prose/link/single/relation,link,True
+G0198,overlap,Q319591,Q40291282,P4321,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0199,overlap,Q1426,Q1426,P31,Q5,s12,prose/unlinked/multi/relation,unique,False
+G0200,overlap,Q6882,Q6511,P50,Q6882,s2,prose/link/multi/relation,link,True
+G0201,overlap,Q41173,Q37822706,P175,Q41173,s7,prose/link/single/relation,link,True
+G0202,overlap,Q5383,Q2669959,P26,Q5383,ib:infobox person|spouse,infobox/link/multi/relation,link,False
+G0203,overlap,Q549981,Q549981,P166,Q843219,s6,prose/link/single/relation,link,True
+G0204,overlap,Q107006,Q107006,P26,Q2713078,ib:infobox person|partner,infobox/link/multi/relation,link,True
+G0205,overlap,Q9161,Q9161,P27,Q83286,s15,prose/unlinked/single/relation,unique,True
+G0206,overlap,Q908933,Q908933,P106,Q177220,s2,prose/unlinked/single/relation,unique,False
+G0207,overlap,Q6882,Q6882,P20,Q72,s20,prose/unlinked/multi/relation,unique,True
+G0208,overlap,Q6399,Q6399,P1344,Q8577,s1,prose/link/single/relation,link,True
+G0209,overlap,Q56008,Q56008,P734,Q1259568,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0210,overlap,Q319591,Q319591,P19,Q3870,ib:infobox cyclist|birth_place,infobox/link/multi/relation,link,True
+G0211,overlap,Q256380,Q256380,P106,Q82955,s0,prose/unlinked/single/relation,unique,False
+G0212,overlap,Q26876,Q26876,P19,Q528626,s2,prose/link/single/relation,link,True
+G0213,overlap,Q107006,Q12018,P161,Q107006,s2,prose/link/single/relation,link,True
+G0214,overlap,Q36322,Q36322,P734,Q21492136,s0,prose/unlinked/single/naming,naming,False
+G0215,overlap,Q43682,Q43682,P735,Q18145728,ib:infobox football biography|fullname,infobox/unlinked/single/naming,naming,False
+G0216,overlap,Q7315,Q162935,P86,Q7315,s2,prose/link/multi/relation,link,True
+G0217,overlap,Q34389,Q34389,P264,Q664167,s9,prose/link/single/relation,link,True
+G0218,overlap,Q1426,Q1426,P735,Q4925304,s0,prose/unlinked/single/naming,naming,False
+G0219,overlap,Q26876,Q1764379,P175,Q26876,s6,prose/link/multi/relation,link,False
+G0220,overlap,Q438939,Q438939,P734,Q75422310,ib:infobox football biography|name,infobox/unlinked/single/naming,naming,False
+G0221,overlap,Q43682,Q43682,P54,Q314851,ib:infobox football biography|nationalteam5,infobox/link/single/relation,link,True
+G0222,overlap,Q254395,Q254395,P101,Q11629,ib:infobox artist|known_for,infobox/unlinked/single/relation,unique,False
+G0223,overlap,Q908933,Q908933,P106,Q177220,s0,prose/unlinked/single/relation,unique,False
+G0224,overlap,Q26876,Q26876,P1303,Q61285,ib:infobox musical artist|instrument,infobox/unlinked/single/relation,unique,False
+G0225,overlap,Q55800,Q55800,P735,Q19819754,s0,prose/unlinked/single/naming,naming,False
+G0226,overlap,Q26876,Q26876,P136,Q37073,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0227,overlap,Q319591,Q8161717,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/single/relation,link,True
+G0228,overlap,Q9161,Q9161,P27,Q83286,s23,prose/unlinked/single/relation,unique,True
+G0229,overlap,Q56008,Q56008,P106,Q266569,s0,prose/unlinked/single/relation,unique,False
+G0230,overlap,Q43203,Q43203,P27,Q30,s7,prose/unlinked/single/relation,unique,False
+G0231,overlap,Q7374,Q2526255,P5869,Q7374,s2,prose/unlinked/multi/relation,unique,False
+G0232,overlap,Q34389,Q34389,P3373,Q234695,ib:infobox person|relatives,infobox/link/multi/relation,link,True
+G0233,overlap,Q1426,Q1426,P2522,Q378627,s4,prose/link/multi/relation,link,True
+G0234,overlap,Q549981,Q549981,P136,Q8341,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0235,overlap,Q19155,Q210148,P22,Q19155,s16,prose/link/multi/relation,link,True
+G0236,overlap,Q43203,Q503338,P162,Q43203,s5,prose/link/multi/relation,link,True
+G0237,overlap,Q9161,Q9161,P27,Q83286,s2,prose/link/single/relation,link,True
+G0238,overlap,Q42581,Q42581,P106,Q33999,s0,prose/unlinked/single/relation,unique,False
+G0239,overlap,Q319591,Q319591,P2522,Q21821246,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0240,overlap,Q444,Q444,P106,Q82955,s0,prose/unlinked/single/relation,unique,False
+G0241,overlap,Q36301,Q36301,P1411,Q106301,s9,prose/link/multi/relation,link,False
+G0242,overlap,Q319591,Q20882755,P710,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0243,overlap,Q26876,Q26876,P27,Q30,s0,prose/unlinked/single/relation,unique,False
+G0244,overlap,Q6399,Q6399,P27,Q36,ib:infobox sportsperson|birth_place,infobox/unlinked/multi/relation,unique,False
+G0245,overlap,Q7374,Q163038,P57,Q7374,s12,prose/link/multi/relation,link,True
+G0246,overlap,Q908933,Q908933,P734,Q16870080,s0,prose/unlinked/single/naming,naming,False
+G0247,overlap,Q1426,Q3983544,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|masterscupresult",infobox/link/single/relation,link,True
+G0248,overlap,Q256380,Q256380,P734,Q20165754,s0,prose/unlinked/single/naming,naming,False
+G0249,overlap,Q444,Q444,P1412,Q809,s8,prose/unlinked/multi/relation,unique,False
+G0250,overlap,Q1426,Q1426,P2522,Q22956224,s11,prose/link/multi/relation,link,True
+G0251,overlap,Q7542,Q7542,P361,Q519725,s8,prose/link/multi/relation,link,False
+G0252,overlap,Q1426,Q1426,P1344,Q757054,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|medaltemplates",infobox/link/multi/relation,link,False
+G0253,overlap,Q7374,Q2526255,P5869,Q7374,s6,prose/unlinked/multi/relation,unique,False
+G0254,overlap,Q5383,Q5383,P106,Q488205,s0,prose/unlinked/single/relation,unique,False
+G0255,overlap,Q7374,Q223139,P161,Q7374,s12,prose/link/multi/relation,link,False
+G0256,overlap,Q1426,Q1426,P27,Q39,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|birth_place",infobox/unlinked/multi/relation,unique,False
+G0257,overlap,Q41173,Q41173,P136,Q850412,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0258,overlap,Q1426,Q1426,P641,Q847,s13,prose/unlinked/single/relation,unique,True
+G0259,overlap,Q254395,Q254395,P106,Q5716684,s0,prose/unlinked/single/relation,unique,False
+G0260,overlap,Q319591,Q20046675,P710,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0261,overlap,Q108366,Q108366,P734,Q16881065,s0,prose/unlinked/single/naming,naming,False
+G0262,overlap,Q549981,Q549981,P106,Q177220,ib:infobox musical artist|occupation,infobox/unlinked/single/relation,unique,False
+G0263,overlap,Q483577,Q483577,P54,Q7156,s10,prose/unlinked/single/relation,unique,True
+G0264,overlap,Q357102,Q357102,P945,Q30,s6,prose/unlinked/multi/relation,unique,False
+G0265,overlap,Q25973,Q25973,P20,Q694086,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|death_place,infobox/link/single/relation,link,True
+G0266,overlap,Q134958,Q134958,P735,Q1960378,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|name,infobox/unlinked/single/naming,naming,False
+G0267,overlap,Q319591,Q319591,P641,Q3609,s0,prose/link/single/relation,link,True
+G0268,overlap,Q36322,Q274744,P50,Q36322,s4,prose/link/multi/relation,link,False
+G0269,overlap,Q7315,Q7315,P101,Q638,s16,prose/unlinked/single/relation,unique,False
+G0270,overlap,Q43203,Q221586,P57,Q43203,s9,prose/link/multi/relation,link,False
+G0271,overlap,Q6399,Q6399,P735,Q925678,ib:infobox sportsperson|name,infobox/unlinked/single/naming,naming,False
+G0272,overlap,Q319591,Q18720385,P1346,Q319591,s14,prose/link/multi/relation,link,True
+G0273,overlap,Q56008,Q56008,P734,Q1259568,s0,prose/unlinked/single/naming,naming,False
+G0274,overlap,Q26876,Q26876,P27,Q30,ib:infobox musical artist|origin,infobox/unlinked/single/relation,unique,False
+G0275,overlap,Q19155,Q2345,P162,Q19155,s10,prose/link/multi/relation,link,False
+G0276,overlap,Q483577,Q483577,P54,Q1543,s11,prose/link/single/relation,link,True
+G0277,overlap,Q34389,Q1139652,P175,Q34389,s10,prose/link/single/relation,link,True
+G0278,overlap,Q9161,Q9161,P241,Q155198,s10,prose/link/single/relation,link,True
+G0279,overlap,Q44467,Q44467,P734,Q21500586,s0,prose/unlinked/single/naming,naming,False
+G0280,overlap,Q5383,Q5383,P735,Q4927937,s0,prose/unlinked/single/naming,naming,False
+G0281,overlap,Q36322,Q36322,P800,Q333179,s5,prose/link/multi/relation,link,False
+G0282,overlap,Q107006,Q107006,P136,Q21590660,s4,prose/unlinked/single/relation,unique,False
+G0283,overlap,Q7542,Q7542,P20,Q1992901,s15,prose/link/multi/relation,link,True
+G0284,overlap,Q107006,Q107006,P734,Q56537934,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0285,overlap,Q319591,Q15220420,P2321,Q319591,s1,prose/link/multi/relation,link,True
+G0286,overlap,Q908933,Q908933,P106,Q753110,s0,prose/unlinked/single/relation,unique,False
+G0287,overlap,Q7374,Q7374,P106,Q3282637,s3,prose/unlinked/single/relation,unique,False
+G0288,overlap,Q26876,Q19892111,P175,Q26876,s7,prose/link/multi/relation,link,False
+G0289,overlap,Q43203,Q503338,P57,Q43203,s5,prose/link/multi/relation,link,False
+G0290,overlap,Q5432,Q5432,P734,Q12655766,ib:infobox artist|birth_name,infobox/unlinked/single/naming,naming,False
+G0291,overlap,Q7315,Q7315,P20,Q656,"ib:infobox composer <!-- attention: before making changes to this infobox please consider discussing on the talk page. per [[special:permanentlink/1131740353#rfc regarding the addition of an infobox]], this is intentionally concise as the result of community consensus. -->|death_place",infobox/link/multi/relation,link,True
+G0292,overlap,Q256380,Q256380,P22,Q1350771,ib:infobox person|relatives,infobox/link/multi/relation,link,True
+G0293,overlap,Q42581,Q42581,P735,Q1083457,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0294,overlap,Q47087,Q47087,P735,Q2958359,s0,prose/unlinked/single/naming,naming,False
+G0295,overlap,Q254220,Q254220,P735,Q61788182,ib:infobox gymnast|name,infobox/unlinked/single/naming,naming,False
+G0296,overlap,Q254220,Q254220,P1532,Q159,ib:infobox gymnast|residence,infobox/unlinked/multi/relation,one_sense,False
+G0297,overlap,Q6399,Q20807758,P1346,Q6399,ib:infobox sportsperson|medaltemplates,infobox/link/single/relation,link,True
+G0298,overlap,Q42581,Q42581,P106,Q33999,s11,prose/unlinked/single/relation,unique,False
+G0299,overlap,Q434839,Q434839,P734,Q53189956,ib:infobox scientist|name,infobox/unlinked/single/naming,naming,False
+G0300,overlap,Q229507,Q275964,P25,Q229507,ib:infobox person|children,infobox/link/multi/relation,link,True
+G0301,overlap,Q19155,Q1708667,P161,Q19155,s13,prose/link/single/relation,link,True
+G0302,overlap,Q41223,Q206870,P50,Q41223,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|notableworks,infobox/link/multi/relation,link,True
+G0303,overlap,Q25973,Q25973,P735,Q1158570,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|name,infobox/unlinked/single/naming,naming,False
+G0304,overlap,Q39212,Q39212,P734,Q21507348,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|birth_name,infobox/unlinked/single/naming,naming,False
+G0305,overlap,Q7374,Q163038,P161,Q7374,s12,prose/link/multi/relation,link,False
+G0306,overlap,Q7315,Q7315,P136,Q9730,s8,prose/unlinked/single/relation,unique,False
+G0307,overlap,Q180383,Q180383,P735,Q13376892,ib:infobox officeholder|name,infobox/unlinked/single/naming,naming,False
+G0308,overlap,Q438939,Q438939,P54,Q3085161,s13,prose/link/single/relation,link,False
+G0309,overlap,Q15935,Q15935,P1327,Q62766,s9,prose/unlinked/multi/relation,unique,True
+G0310,overlap,Q229507,Q229507,P509,Q9687,ib:infobox person|death_cause,infobox/unlinked/single/relation,unique,False
+G0311,overlap,Q25973,Q25973,P1411,Q37922,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|awards,infobox/link/multi/relation,link,False
+G0312,overlap,Q549981,Q549981,P1303,Q6607,ib:infobox musical artist|instrument,infobox/unlinked/single/relation,unique,False
+G0313,overlap,Q7542,Q7542,P106,Q33999,s12,prose/unlinked/single/relation,unique,False
+G0314,overlap,Q319591,Q319591,P1344,Q40291282,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0315,overlap,Q229507,Q229507,P735,Q20798991,s0,prose/unlinked/single/naming,naming,False
+G0316,overlap,Q6399,Q6399,P1532,Q36,ib:infobox sportsperson|birth_place,infobox/unlinked/multi/relation,unique,False
+G0317,overlap,Q5383,Q5383,P101,Q638,s3,prose/unlinked/single/relation,unique,False
+G0318,overlap,Q11998,Q726663,P175,Q11998,s7,prose/link/single/relation,link,True
+G0319,overlap,Q7374,Q7374,P166,Q292044,s20,prose/link/multi/relation,link,True
+G0320,overlap,Q357102,Q357102,P945,Q30,s7,prose/unlinked/multi/relation,unique,False
+G0321,overlap,Q319591,Q837649,P3494,Q319591,s1,prose/link/multi/relation,link,False
+G0322,overlap,Q319591,Q4503632,P1346,Q319591,s12,prose/link/multi/relation,link,False
+G0323,overlap,Q108366,Q506638,P161,Q108366,s5,prose/link/single/relation,link,True
+G0324,overlap,Q908933,Q908933,P264,Q165745,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0325,overlap,Q15935,Q15935,P106,Q2252262,s0,prose/unlinked/single/relation,unique,False
+G0326,overlap,Q357102,Q357102,P410,Q3280545,s6,prose/unlinked/single/relation,unique,True
+G0327,overlap,Q168040,Q168040,P800,Q887867,ib:infobox writer|notableworks,infobox/link/multi/relation,link,False
+G0328,overlap,Q5383,Q5383,P937,Q60,ib:infobox person|death_place,infobox/unlinked/single/relation,unique,False
+G0329,overlap,Q319591,Q21821246,P3494,Q319591,s1,prose/link/multi/relation,link,False
+G0330,overlap,Q1426,Q1426,P2522,Q753300,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|wimbledonresult",infobox/link/multi/relation,link,True
+G0331,single,Q43203,Q184255,P162,Q43203,s8,prose/link/multi/relation,link,True
+G0332,single,Q25973,Q25973,P106,Q6625963,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|occupation,infobox/unlinked/single/relation,unique,False
+G0333,single,Q7374,Q223139,P57,Q7374,s12,prose/link/multi/relation,link,True
+G0334,single,Q51545,Q470375,P161,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0335,single,Q36301,Q36301,P735,Q564684,s0,prose/unlinked/single/naming,naming,False
+G0336,single,Q438939,Q438939,P413,Q193592,s2,prose/link/single/relation,link,True
+G0337,single,Q43203,Q126699,P57,Q43203,s6,prose/link/multi/relation,link,False
+G0338,single,Q319591,Q319591,P641,Q2215841,s17,prose/unlinked/single/relation,unique,False
+G0339,single,Q25078,Q23395,P57,Q25078,s1,prose/link/multi/relation,link,True
+G0340,single,Q107006,Q38815,P161,Q107006,s5,prose/link/single/relation,link,False
+G0341,single,Q319591,Q15881445,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0342,single,Q25973,Q25973,P800,Q860577,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|notableworks,infobox/link/multi/relation,link,False
+G0343,single,Q26876,Q858750,P175,Q26876,s7,prose/link/multi/relation,link,False
+G0344,single,Q319591,Q18747722,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/single/relation,link,True
+G0345,single,Q438939,Q438939,P734,Q75422310,s0,prose/unlinked/single/naming,naming,False
+G0346,single,Q55800,Q55800,P172,Q49085,s2,prose/unlinked/single/relation,unique,False
+G0347,single,Q15935,Q15935,P27,Q30,ib:infobox musical artist|origin,infobox/unlinked/single/relation,unique,False
+G0348,single,Q483577,Q483577,P54,Q2419887,ib:infobox football biography|clubs15,infobox/link/single/relation,link,True
+G0349,single,Q254220,Q254220,P17,Q159,ib:infobox gymnast|residence,infobox/unlinked/multi/relation,one_sense,False
+G0350,single,Q319591,Q40291282,P4321,Q319591,s16,prose/link/multi/relation,link,False
+G0351,single,Q36301,Q570652,P161,Q36301,s8,prose/link/single/relation,link,True
+G0352,single,Q44467,Q1764242,P175,Q44467,s3,prose/link/single/relation,link,True
+G0353,single,Q51545,Q988029,P57,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,True
+G0354,single,Q319591,Q219414,P2321,Q319591,s11,prose/unlinked/multi/relation,unique,True
+G0355,single,Q108366,Q1882322,P161,Q108366,s5,prose/link/single/relation,link,True
+G0356,single,Q39212,Q39212,P166,Q37922,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|awards,infobox/link/multi/relation,link,True
+G0357,single,Q233332,Q233332,P19,Q41211,ib:infobox tennis biography|birth_place,infobox/link/single/relation,link,True
+G0358,single,Q1426,Q3983537,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|masterscupresult",infobox/link/single/relation,link,True
+G0359,single,Q229507,Q229507,P734,Q16876392,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0360,single,Q26876,Q26876,P734,Q18331735,s0,prose/unlinked/single/naming,naming,False
+G0361,single,Q34389,Q234695,P3373,Q34389,ib:infobox person|relatives,infobox/link/multi/relation,link,False
+G0362,single,Q319591,Q26878348,P4320,Q319591,s16,prose/link/multi/relation,link,False
+G0363,single,Q233332,Q233332,P641,Q847,s0,prose/link/single/relation,link,True
+G0364,single,Q254395,Q254395,P735,Q14942517,ib:infobox artist|name,infobox/unlinked/single/naming,naming,False
+G0365,single,Q26876,Q3944735,P162,Q26876,s11,prose/link/multi/relation,link,False
+G0366,single,Q1426,Q1426,P2522,Q25344123,s11,prose/link/multi/relation,link,True
+G0367,single,Q1426,Q1426,P734,Q16869916,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|name",infobox/unlinked/single/naming,naming,False
+G0368,single,Q51545,Q51545,P800,Q190575,s3,prose/link/multi/relation,link,False
+G0369,single,Q41223,Q41223,P800,Q206870,s4,prose/unlinked/multi/relation,one_sense,False
+G0370,single,Q5383,Q5383,P136,Q37073,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0371,single,Q55800,Q2573619,P112,Q55800,ib:infobox person|title,infobox/link/single/relation,link,True
+G0372,single,Q229507,Q229507,P166,Q1131356,s2,prose/link/single/relation,link,True
+G0373,single,Q41173,Q21856203,P112,Q41173,ib:infobox musical artist|label,infobox/link/multi/relation,link,False
+G0374,single,Q357102,Q357102,P945,Q30,ib:infobox officeholder|death_place,infobox/unlinked/multi/relation,unique,False
+G0375,single,Q47087,Q47087,P101,Q24925,s7,prose/unlinked/multi/relation,unique,False
+G0376,single,Q26876,Q17544553,P175,Q26876,s7,prose/link/single/relation,link,True
+G0377,single,Q44467,Q44467,P26,Q127454,ib:infobox person|spouse,infobox/link/multi/relation,link,True
+G0378,single,Q549981,Q549981,P27,Q30,ib:infobox musical artist|origin,infobox/unlinked/single/relation,unique,False
+G0379,single,Q56008,Q56008,P106,Q2526255,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0380,single,Q43203,Q221586,P86,Q43203,s9,prose/link/multi/relation,link,False
+G0381,single,Q5432,Q8341785,P170,Q5432,s19,prose/link/single/relation,link,True
+G0382,single,Q41173,Q20886070,P175,Q41173,s7,prose/link/single/relation,link,True
+G0383,single,Q438939,Q438939,P21,Q6581072,s4,prose/unlinked/single/relation,unique,False
+G0384,single,Q319591,Q319591,P2522,Q15220420,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0385,single,Q108366,Q898840,P161,Q108366,s10,prose/link/single/relation,link,True
+G0386,single,Q444,Q444,P106,Q181043,s0,prose/link/single/relation,link,True
+G0387,single,Q6882,Q6882,P40,Q3838462,ib:infobox writer|children,infobox/link/multi/relation,link,False
+G0388,single,Q483577,Q483577,P413,Q280658,ib:infobox football biography|position,infobox/link/single/relation,link,True
+G0389,single,Q34389,Q465702,P40,Q34389,ib:infobox person|mother,infobox/link/multi/relation,link,False
+G0390,single,Q7374,Q7374,P800,Q202548,s18,prose/unlinked/multi/relation,unique,False
+G0391,single,Q23891,Q23891,P1412,Q1860,s0,prose/unlinked/multi/relation,unique,False
+G0392,single,Q5383,Q288437,P86,Q5383,s13,prose/link/multi/relation,link,False
+G0393,single,Q56008,Q56008,P551,Q39561,ib:infobox person|birth_place,infobox/link/multi/relation,link,False
+G0394,single,Q1426,Q378627,P1346,Q1426,s4,prose/link/multi/relation,link,False
+G0395,single,Q134958,Q134958,P27,Q34266,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|death_place,infobox/unlinked/single/relation,unique,True
+G0396,single,Q42581,Q42581,P1411,Q106301,s10,prose/link/single/relation,link,True
+G0397,single,Q9161,Q641691,P488,Q9161,ib:infobox officeholder|party,infobox/link/multi/relation,link,True
+G0398,single,Q19155,Q4688829,P26,Q19155,ib:infobox person|spouse,infobox/link/multi/relation,link,True
+G0399,single,Q5383,Q5383,P735,Q18057751,s0,prose/unlinked/single/naming,naming,False
+G0400,single,Q6882,Q6882,P937,Q546,s13,prose/unlinked/single/relation,unique,True
+G0401,single,Q908933,Q908933,P40,Q4739774,ib:infobox person|children,infobox/link/multi/relation,link,False
+G0402,single,Q438939,Q438939,P54,Q1276685,s15,prose/link/single/relation,link,False
+G0403,single,Q107006,Q107006,P27,Q38,s1,prose/unlinked/single/relation,unique,False
+G0404,single,Q180383,Q180383,P69,Q492467,s3,prose/link/single/relation,link,True
+G0405,single,Q25078,Q25078,P463,Q16402,s5,prose/unlinked/multi/relation,unique,False
+G0406,single,Q908933,Q908933,P509,Q47912,s13,prose/link/single/relation,link,True
+G0407,single,Q444,Q1003,P488,Q444,s6,prose/unlinked/multi/relation,unique,True
+G0408,single,Q1426,Q1426,P2522,Q912483,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|wimbledonresult",infobox/link/multi/relation,link,True
+G0409,single,Q357102,Q357102,P20,Q986629,ib:infobox officeholder|death_place,infobox/link/single/relation,link,True
+G0410,single,Q15935,Q1343378,P86,Q15935,ib:infobox musical artist|past_member_of,infobox/link/multi/relation,link,True
+G0411,single,Q7542,Q1228240,P162,Q7542,s7,prose/link/multi/relation,link,True
+G0412,single,Q25973,Q217073,P50,Q25973,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|notableworks,infobox/link/multi/relation,link,True
+G0413,single,Q108366,Q108366,P20,Q65,ib:infobox person|resting_place,infobox/unlinked/multi/relation,unique,True
+G0414,single,Q36322,Q36322,P937,Q21,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]]. -->|birth_place,infobox/unlinked/single/relation,unique,False
+G0415,single,Q41173,Q41173,P27,Q30,s9,prose/unlinked/single/relation,unique,False
+G0416,single,Q438939,Q438939,P734,Q75422310,ib:infobox football biography|fullname,infobox/unlinked/single/naming,naming,False
+G0417,single,Q15935,Q15935,P106,Q177220,s0,prose/unlinked/single/relation,unique,False
+G0418,single,Q319591,Q837649,P4320,Q319591,s10,prose/link/multi/relation,link,False
+G0419,single,Q168040,Q168040,P735,Q1390433,s0,prose/unlinked/single/naming,naming,False
+G0420,single,Q43203,Q689842,P57,Q43203,s10,prose/link/multi/relation,link,False
+G0421,single,Q319591,Q21821246,P710,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0422,single,Q483577,Q483577,P54,Q7156,s9,prose/unlinked/single/relation,unique,True
+G0423,single,Q483577,Q483577,P413,Q193592,s0,prose/link/single/relation,link,False
+G0424,single,Q5383,Q5383,P106,Q33999,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0425,single,Q6882,Q6882,P800,Q6511,s12,prose/unlinked/multi/relation,unique,False
+G0426,single,Q319591,Q319591,P1344,Q98043180,s23,prose/link/multi/relation,link,False
+G0427,single,Q56008,Q164417,P162,Q56008,s1,prose/link/multi/relation,link,True
+G0428,single,Q25078,Q787148,P1346,Q25078,s10,prose/link/single/relation,link,True
+G0429,single,Q43203,Q976575,P22,Q43203,ib:infobox officeholder|children,infobox/link/multi/relation,link,True
+G0430,single,Q7374,Q34414,P57,Q7374,ib:infobox person|notable_works,infobox/link/multi/relation,link,True
+G0431,single,Q39212,Q37922,P1346,Q39212,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|awards,infobox/link/multi/relation,link,False
+G0432,single,Q19155,Q19155,P106,Q3282637,s11,prose/unlinked/single/relation,unique,False
+G0433,single,Q25078,Q466297,P57,Q25078,s1,prose/link/single/relation,link,True
+G0434,single,Q233332,Q233332,P735,Q1311751,ib:infobox tennis biography|name,infobox/unlinked/single/naming,naming,False
+G0435,single,Q549981,Q96347647,P175,Q549981,s10,prose/link/single/relation,link,True
+G0436,single,Q55800,Q694106,P371,Q55800,s9,prose/unlinked/multi/relation,unique,False
+G0437,single,Q6882,Q6882,P937,Q546,s11,prose/unlinked/single/relation,unique,True
+G0438,single,Q7374,Q465979,P57,Q7374,s10,prose/link/multi/relation,link,True
+G0439,single,Q319591,Q20882755,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0440,single,Q483577,Q483577,P54,Q508440,s6,prose/link/single/relation,link,True
+G0441,single,Q549981,Q549981,P166,Q1453643,s6,prose/link/multi/relation,link,True
+G0442,single,Q43682,Q43682,P1344,Q22669,ib:infobox football biography|medaltemplates,infobox/link/single/relation,link,True
+G0443,single,Q168040,Q1638148,P50,Q168040,ib:infobox writer|notableworks,infobox/link/multi/relation,link,True
+G0444,single,Q43203,Q741196,P57,Q43203,s5,prose/link/multi/relation,link,False
+G0445,single,Q6882,Q6511,P50,Q6882,s12,prose/unlinked/multi/relation,unique,True
+G0446,single,Q34389,Q34389,P264,Q202585,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0447,single,Q51545,Q51545,P27,Q96,s0,prose/unlinked/single/relation,commonness,True
+G0448,single,Q7542,Q7542,P264,Q183387,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0449,single,Q41223,Q41223,P6886,Q7737,s2,prose/unlinked/multi/relation,unique,True
+G0450,single,Q25973,Q25973,P166,Q37922,s2,prose/link/multi/relation,link,True
+G0451,single,Q41223,Q41223,P22,Q213596,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|parents,infobox/link/multi/relation,link,True
+G0452,single,Q41173,Q41173,P27,Q30,ib:infobox person|birth_place,infobox/unlinked/single/relation,unique,False
+G0453,single,Q34389,Q34389,P106,Q183945,s17,prose/unlinked/single/relation,commonness,False
+G0454,single,Q5383,Q5383,P735,Q18057751,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0455,single,Q168040,Q168040,P166,Q3114768,ib:infobox writer|awards,infobox/link/single/relation,link,True
+G0456,single,Q483577,Q483577,P166,Q166177,s3,prose/link/single/relation,link,True
+G0457,single,Q36301,Q36301,P166,Q106301,s9,prose/link/multi/relation,link,True
+G0458,single,Q449013,Q449013,P19,Q60,ib:infobox person|birth_place,infobox/link/single/relation,link,True
+G0459,single,Q51545,Q988029,P58,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0460,single,Q34389,Q34389,P136,Q37073,s3,prose/unlinked/single/relation,unique,False
+G0461,single,Q908933,Q908933,P136,Q58339,s16,prose/unlinked/single/relation,unique,True
+G0462,single,Q47087,Q47087,P735,Q2958359,ib:infobox writer|birth_name,infobox/unlinked/single/naming,naming,False
+G0463,single,Q51545,Q51545,P800,Q572522,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0464,single,Q25078,Q707880,P57,Q25078,s1,prose/link/single/relation,link,True
+G0465,single,Q34389,Q34389,P27,Q30,ib:infobox person|death_place,infobox/unlinked/single/relation,unique,False
+G0466,single,Q42581,Q42581,P735,Q6383805,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0467,single,Q41173,Q41173,P27,Q30,s5,prose/unlinked/single/relation,unique,False
+G0468,single,Q108366,Q1177405,P161,Q108366,s6,prose/link/single/relation,link,True
+G0469,single,Q9161,Q9161,P607,Q362,ib:infobox officeholder|battles,infobox/link/single/relation,link,True
+G0470,single,Q7542,Q7542,P735,Q29533562,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0471,single,Q7374,Q223139,P161,Q7374,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0472,single,Q319591,Q319591,P31,Q5,s15,prose/unlinked/multi/relation,unique,False
+G0473,single,Q39212,Q39212,P734,Q21507348,s0,prose/unlinked/single/naming,naming,False
+G0474,single,Q449013,Q449013,P26,Q1280288,s2,prose/link/multi/relation,link,False
+G0475,single,Q41223,Q41223,P27,Q34266,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|citizenship,infobox/link/single/relation,link,True
+G0476,single,Q44467,Q44467,P734,Q16860126,s0,prose/unlinked/single/naming,naming,False
+G0477,single,Q19155,Q19155,P101,Q11635,s8,prose/unlinked/single/relation,unique,False
+G0478,single,Q438939,Q438939,P54,Q751670,ib:infobox football biography|nationalteam4,infobox/link/single/relation,link,True
+G0479,single,Q23891,Q23891,P735,Q14816494,s0,prose/unlinked/single/naming,naming,False
+G0480,single,Q319591,Q319591,P2522,Q26878348,s16,prose/link/multi/relation,link,False
+G0481,single,Q9161,Q9161,P734,Q41769471,ib:infobox officeholder|name,infobox/unlinked/single/naming,naming,False
+G0482,single,Q25973,Q836841,P50,Q25973,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|notableworks,infobox/link/multi/relation,link,True
+G0483,single,Q7315,Q7315,P551,Q656,"ib:infobox composer <!-- attention: before making changes to this infobox please consider discussing on the talk page. per [[special:permanentlink/1131740353#rfc regarding the addition of an infobox]], this is intentionally concise as the result of community consensus. -->|death_place",infobox/link/multi/relation,link,False
+G0484,single,Q319591,Q916174,P1346,Q319591,ib:infobox cyclist|medaltemplates,infobox/link/multi/relation,link,True
+G0485,single,Q41173,Q918493,P2789,Q41173,s5,prose/link/multi/relation,link,True
+G0486,single,Q41223,Q206870,P50,Q41223,s4,prose/unlinked/multi/relation,one_sense,True
+G0487,single,Q108366,Q497311,P161,Q108366,s4,prose/link/single/relation,link,True
+G0488,single,Q7542,Q7542,P106,Q639669,s17,prose/unlinked/single/relation,unique,False
+G0489,single,Q23891,Q4254026,P161,Q23891,s7,prose/link/single/relation,link,True
+G0490,single,Q449013,Q449013,P27,Q30,ib:infobox person|birth_place,infobox/unlinked/single/relation,unique,False
+G0491,single,Q438939,Q438939,P54,Q32970,ib:infobox football biography|nationalteam2,infobox/link/single/relation,link,True
+G0492,single,Q134958,Q134958,P19,Q2180620,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|birth_place,infobox/link/single/relation,link,True
+G0493,single,Q9161,Q9161,P102,Q641691,ib:infobox officeholder|party,infobox/link/multi/relation,link,False
+G0494,single,Q483577,Q483577,P54,Q83459,s18,prose/link/single/relation,link,True
+G0495,single,Q42581,Q190588,P161,Q42581,s6,prose/link/single/relation,link,True
+G0496,single,Q15935,Q547624,P162,Q15935,s5,prose/link/multi/relation,link,True
+G0497,single,Q11998,Q11998,P166,Q14420,ib:infobox person|post-nominals,infobox/unlinked/single/relation,unique,True
+G0498,single,Q9161,Q641691,P488,Q9161,s8,prose/link/multi/relation,link,True
+G0499,single,Q15935,Q15935,P1327,Q62766,s8,prose/link/multi/relation,link,True
+G0500,single,Q44467,Q44935,P161,Q44467,s4,prose/link/single/relation,link,True
+G0501,single,Q134958,Q134958,P1412,Q7737,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|language,infobox/unlinked/multi/relation,unique,False
+G0502,single,Q56008,Q56256181,P26,Q56008,ib:infobox person|spouse,infobox/unlinked/multi/relation,unique,False
+G0503,single,Q319591,Q219414,P710,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0504,single,Q42581,Q165713,P161,Q42581,s4,prose/link/single/relation,link,True
+G0505,single,Q51545,Q946849,P161,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0506,single,Q1426,Q10132,P3342,Q1426,s11,prose/link/multi/relation,link,True
+G0507,single,Q108366,Q3231621,P161,Q108366,s3,prose/link/single/relation,link,True
+G0508,single,Q131545,Q131545,P106,Q465501,s8,prose/unlinked/single/relation,unique,True
+G0509,single,Q7315,Q7315,P551,Q133838,"ib:infobox composer <!-- attention: before making changes to this infobox please consider discussing on the talk page. per [[special:permanentlink/1131740353#rfc regarding the addition of an infobox]], this is intentionally concise as the result of community consensus. -->|birth_place",infobox/link/multi/relation,link,False
+G0510,single,Q15935,Q15935,P106,Q753110,s0,prose/unlinked/single/relation,unique,False
+G0511,single,Q434839,Q434839,P1038,Q9215,s4,prose/link/multi/relation,link,False
+G0512,single,Q908933,Q908933,P735,Q372250,s0,prose/unlinked/single/naming,naming,False
+G0513,single,Q319591,Q219414,P4320,Q319591,s11,prose/unlinked/multi/relation,unique,False
+G0514,single,Q19155,Q19155,P166,Q103916,s14,prose/link/multi/relation,link,True
+G0515,single,Q438939,Q438939,P19,Q23482,ib:infobox football biography|birth_place,infobox/link/single/relation,link,True
+G0516,single,Q43203,Q275187,P57,Q43203,s9,prose/link/multi/relation,link,False
+G0517,single,Q254220,Q254220,P27,Q265,ib:infobox gymnast|birth_place,infobox/link/single/relation,link,True
+G0518,single,Q449013,Q168041,P40,Q449013,s6,prose/link/multi/relation,link,False
+G0519,single,Q56008,Q19321019,P57,Q56008,s2,prose/link/single/relation,link,True
+G0520,single,Q1426,Q10132,P3342,Q1426,s7,prose/link/multi/relation,link,True
+G0521,single,Q42581,Q327831,P40,Q42581,ib:infobox person|father,infobox/link/multi/relation,link,False
+G0522,single,Q9161,Q9161,P26,Q3441042,ib:infobox officeholder|spouse,infobox/link/multi/relation,link,True
+G0523,single,Q438939,Q438939,P735,Q16420967,s0,prose/unlinked/single/naming,naming,False
+G0524,single,Q233332,Q233332,P735,Q1311751,s0,prose/unlinked/single/naming,naming,False
+G0525,single,Q131545,Q131545,P735,Q668885,s0,prose/unlinked/single/naming,naming,False
+G0526,single,Q34389,Q34389,P106,Q4610556,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0527,single,Q42581,Q327831,P40,Q42581,s3,prose/link/multi/relation,link,False
+G0528,single,Q449013,Q449013,P22,Q168041,ib:infobox person|parents,infobox/link/multi/relation,link,True
+G0529,single,Q19155,Q19155,P101,Q11424,s4,prose/unlinked/single/relation,unique,False
+G0530,single,Q25973,Q25973,P166,Q37922,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|awards,infobox/link/multi/relation,link,True
+G0531,single,Q229507,Q229507,P27,Q30,s7,prose/unlinked/single/relation,unique,False
+G0532,single,Q11998,Q11998,P1056,Q6451631,ib:infobox person|works,infobox/link/single/relation,link,True
+G0533,single,Q15935,Q15935,P734,Q2564123,s0,prose/unlinked/single/naming,naming,False
+G0534,single,Q41173,Q191088,P451,Q41173,s2,prose/link/multi/relation,link,True
+G0535,single,Q7542,Q208824,P162,Q7542,s7,prose/link/multi/relation,link,True
+G0536,single,Q319591,Q24906800,P1346,Q319591,s3,prose/link/single/relation,link,True
+G0537,single,Q51545,Q1138798,P58,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0538,single,Q168040,Q887867,P50,Q168040,ib:infobox writer|notableworks,infobox/link/multi/relation,link,True
+G0539,single,Q449013,Q449013,P3373,Q5981051,ib:infobox person|relatives,infobox/link/multi/relation,link,False
+G0540,single,Q44467,Q127454,P26,Q44467,ib:infobox person|spouse,infobox/link/multi/relation,link,False
+G0541,single,Q36322,Q36322,P101,Q8242,s11,prose/unlinked/single/relation,unique,False
+G0542,single,Q444,Q444,P166,Q17144,s12,prose/link/single/relation,link,True
+G0543,single,Q41173,Q41173,P735,Q651493,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0544,single,Q23891,Q23891,P166,Q604370,s2,prose/link/single/relation,link,True
+G0545,single,Q34389,Q34389,P27,Q30,ib:infobox person|birth_place,infobox/unlinked/single/relation,unique,False
+G0546,single,Q5383,Q836667,P175,Q5383,s13,prose/link/multi/relation,link,False
+G0547,single,Q56008,Q164417,P57,Q56008,s1,prose/link/multi/relation,link,False
+G0548,single,Q43203,Q16970789,P57,Q43203,s10,prose/link/multi/relation,link,False
+G0549,single,Q5383,Q288437,P162,Q5383,s13,prose/link/multi/relation,link,False
+G0550,single,Q43682,Q43682,P734,Q21406856,ib:infobox football biography|name,infobox/unlinked/single/naming,naming,False
+G0551,single,Q7374,Q203165,P26,Q7374,ib:infobox person|spouse,infobox/link/multi/relation,link,False
+G0552,single,Q43682,Q43682,P735,Q18145728,s0,prose/unlinked/single/naming,naming,False
+G0553,single,Q15935,Q15935,P264,Q654283,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0554,single,Q7542,Q7542,P1303,Q6607,ib:infobox musical artist|instruments,infobox/unlinked/single/relation,unique,False
+G0555,single,Q43203,Q54812267,P162,Q43203,s6,prose/link/multi/relation,link,True
+G0556,single,Q43203,Q104137,P161,Q43203,s8,prose/link/multi/relation,link,False
+G0557,single,Q7374,Q39005,P57,Q7374,s6,prose/link/single/relation,link,True
+G0558,single,Q256380,Q256380,P26,Q20771812,ib:infobox person|spouse,infobox/unlinked/multi/relation,unique,False
+G0559,single,Q15935,Q21015679,P112,Q15935,s15,prose/link/single/relation,link,True
+G0560,single,Q908933,Q908933,P735,Q1993601,ib:infobox musical artist|name,infobox/unlinked/single/naming,naming,False
+G0561,single,Q180383,Q180383,P39,Q5261068,ib:infobox officeholder|office5,infobox/link/single/relation,link,True
+G0562,single,Q1426,Q384929,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|wimbledonresult",infobox/link/multi/relation,link,False
+G0563,single,Q434839,Q434839,P800,Q488337,ib:infobox scientist|known_for,infobox/link/multi/relation,link,False
+G0564,single,Q434839,Q434839,P101,Q133080,s3,prose/unlinked/single/relation,unique,True
+G0565,single,Q47087,Q108650543,P26,Q47087,ib:infobox writer|spouse,infobox/unlinked/multi/relation,unique,False
+G0566,single,Q51545,Q51545,P800,Q470375,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0567,single,Q319591,Q837649,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0568,single,Q7374,Q7374,P69,Q15274574,ib:infobox person|education,infobox/link/single/relation,link,True
+G0569,single,Q5383,Q288281,P175,Q5383,s9,prose/link/multi/relation,link,False
+G0570,single,Q108366,Q1217612,P161,Q108366,s4,prose/link/single/relation,link,True
+G0571,single,Q7542,Q7542,P19,Q36091,s5,prose/link/multi/relation,link,False
+G0572,single,Q483577,Q483577,P735,Q7944778,s0,prose/unlinked/single/naming,naming,False
+G0573,single,Q5383,Q581952,P170,Q5383,s6,prose/link/multi/relation,link,False
+G0574,single,Q11998,Q11998,P264,Q67030918,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0575,single,Q26876,Q3944735,P175,Q26876,s11,prose/link/multi/relation,link,False
+G0576,single,Q180383,Q180383,P102,Q1048192,s10,prose/unlinked/single/relation,unique,True
+G0577,single,Q7542,Q7542,P361,Q519725,ib:infobox musical artist|associated_acts,infobox/link/multi/relation,link,False
+G0578,single,Q254220,Q254220,P1344,Q8558,ib:infobox gymnast|medaltemplates,infobox/link/single/relation,link,True
+G0579,single,Q36322,Q581180,P50,Q36322,s6,prose/link/single/relation,link,True
+G0580,single,Q5432,Q5432,P101,Q11629,s19,prose/unlinked/single/relation,unique,True
+G0581,single,Q6399,Q6399,P2416,Q184865,s2,prose/unlinked/single/relation,unique,True
+G0582,single,Q549981,Q549981,P264,Q885833,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0583,single,Q56008,Q56008,P26,Q56256181,ib:infobox person|spouse,infobox/unlinked/multi/relation,unique,False
+G0584,single,Q19155,Q676039,P161,Q19155,s5,prose/link/single/relation,link,True
+G0585,single,Q41223,Q41223,P3373,Q6707668,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|relatives,infobox/unlinked/multi/relation,unique,False
+G0586,single,Q7315,Q7315,P103,Q7737,s0,prose/unlinked/multi/relation,unique,False
+G0587,single,Q26876,Q26876,P136,Q83440,s4,prose/unlinked/multi/relation,unique,False
+G0588,single,Q26876,Q104092599,P162,Q26876,s10,prose/link/multi/relation,link,False
+G0589,single,Q107006,Q1113429,P161,Q107006,s6,prose/link/single/relation,link,True
+G0590,single,Q7315,Q7315,P136,Q1344,s2,prose/unlinked/single/relation,unique,False
+G0591,single,Q51545,Q51545,P69,Q219694,ib:infobox person|alma_mater,infobox/link/single/relation,link,True
+G0592,single,Q449013,Q449013,P800,Q3324221,s2,prose/unlinked/multi/relation,unique,False
+G0593,single,Q107006,Q107006,P451,Q346976,ib:infobox person|partner,infobox/link/multi/relation,link,True
+G0594,single,Q108366,Q108366,P735,Q922983,s0,prose/unlinked/single/naming,naming,False
+G0595,single,Q229507,Q229507,P69,Q49213,ib:infobox person|education,infobox/link/single/relation,link,True
+G0596,single,Q319591,Q18574623,P3494,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0597,single,Q6882,Q6507,P50,Q6882,ib:infobox writer|notableworks,infobox/link/multi/relation,link,True
+G0598,single,Q5383,Q1342720,P175,Q5383,s12,prose/link/single/relation,link,True
+G0599,single,Q5432,Q5432,P27,Q29,s20,prose/unlinked/multi/relation,unique,False
+G0600,single,Q25973,Q457289,P50,Q25973,s1,prose/link/multi/relation,link,True
+G0601,single,Q11998,Q11998,P106,Q3282637,s5,prose/unlinked/single/relation,unique,False
+G0602,single,Q254395,Q153739,P26,Q254395,s2,prose/link/multi/relation,link,False
+G0603,single,Q43203,Q43203,P26,Q18932313,ib:infobox officeholder|spouse,infobox/unlinked/multi/relation,unique,False
+G0604,single,Q23891,Q23891,P27,Q145,s3,prose/unlinked/single/relation,unique,False
+G0605,single,Q41173,Q41173,P264,Q387539,s3,prose/link/single/relation,link,True
+G0606,single,Q15935,Q15935,P800,Q66829260,s6,prose/link/multi/relation,link,False
+G0607,single,Q908933,Q720678,P175,Q908933,s5,prose/link/multi/relation,link,False
+G0608,single,Q42581,Q42581,P22,Q327831,s3,prose/link/multi/relation,link,True
+G0609,single,Q7374,Q500044,P57,Q7374,s8,prose/link/multi/relation,link,True
+G0610,single,Q6882,Q6882,P106,Q37226,s9,prose/unlinked/single/relation,unique,False
+G0611,single,Q34389,Q1514054,P175,Q34389,s11,prose/link/single/relation,link,True
+G0612,single,Q15935,Q15935,P25,Q60633179,ib:infobox person|mother,infobox/link/multi/relation,link,True
+G0613,single,Q5383,Q5383,P264,Q208909,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0614,single,Q108366,Q1194888,P161,Q108366,s10,prose/link/single/relation,link,True
+G0615,single,Q180383,Q180383,P39,Q6866167,s7,prose/link/single/relation,link,True
+G0616,single,Q1426,Q1426,P31,Q5,s12,prose/unlinked/multi/relation,unique,False
+G0617,single,Q7315,Q7315,P69,Q178416,s4,prose/link/single/relation,link,True
+G0618,single,Q7374,Q465979,P161,Q7374,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0619,single,Q108366,Q108366,P27,Q30,s0,prose/unlinked/single/relation,unique,False
+G0620,single,Q15935,Q15935,P106,Q177220,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0621,single,Q256380,Q1350771,P40,Q256380,ib:infobox person|relatives,infobox/link/multi/relation,link,False
+G0622,single,Q43203,Q43203,P166,Q292044,s11,prose/link/multi/relation,link,True
+G0623,single,Q7374,Q787148,P1346,Q7374,s20,prose/link/multi/relation,link,False
+G0624,single,Q134958,Q134958,P103,Q8798,s1,prose/link/multi/relation,link,False
+G0625,single,Q7374,Q7374,P800,Q500044,s8,prose/link/multi/relation,link,False
+G0626,single,Q233332,Q233332,P27,Q30,s4,prose/unlinked/multi/relation,unique,False
+G0627,single,Q1426,Q912506,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|usopenresult",infobox/link/multi/relation,link,False
+G0628,single,Q908933,Q908933,P735,Q372250,ib:infobox musical artist|birth_name,infobox/unlinked/single/naming,naming,False
+G0629,single,Q9161,Q9161,P39,Q24944203,s12,prose/link/single/relation,link,True
+G0630,single,Q483577,Q483577,P54,Q83459,s17,prose/unlinked/single/relation,one_sense,True
+G0631,single,Q44467,Q44467,P734,Q21500593,s0,prose/unlinked/single/naming,naming,False
+G0632,single,Q444,Q444,P39,Q1054799,ib:infobox officeholder|predecessor,infobox/unlinked/single/relation,unique,True
+G0633,single,Q7374,Q204212,P57,Q7374,s10,prose/link/multi/relation,link,True
+G0634,single,Q26876,Q19892111,P676,Q26876,s7,prose/link/multi/relation,link,True
+G0635,single,Q11998,Q11998,P735,Q1795077,s0,prose/unlinked/single/naming,naming,False
+G0636,single,Q42581,Q1626186,P161,Q42581,s8,prose/link/single/relation,link,True
+G0637,single,Q134958,Q134958,P1412,Q7737,s2,prose/unlinked/multi/relation,unique,False
+G0638,single,Q7315,Q7315,P1412,Q7737,s18,prose/unlinked/multi/relation,unique,False
+G0639,single,Q256380,Q256380,P735,Q1035258,s0,prose/unlinked/single/naming,naming,False
+G0640,single,Q15935,Q1343378,P175,Q15935,ib:infobox musical artist|past_member_of,infobox/link/multi/relation,link,False
+G0641,single,Q51545,Q51545,P735,Q2598693,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0642,single,Q357102,Q357102,P102,Q29468,ib:infobox officeholder|party,infobox/link/single/relation,link,True
+G0643,single,Q6882,Q6511,P50,Q6882,s25,prose/unlinked/multi/relation,one_sense,True
+G0644,single,Q108366,Q201293,P161,Q108366,s7,prose/link/single/relation,link,True
+G0645,single,Q26876,Q845783,P175,Q26876,s4,prose/link/multi/relation,link,False
+G0646,single,Q43682,Q43682,P1344,Q79859,ib:infobox football biography|medaltemplates,infobox/link/single/relation,link,True
+G0647,single,Q26876,Q26876,P136,Q83440,s7,prose/unlinked/multi/relation,unique,False
+G0648,single,Q26876,Q114721508,P162,Q26876,s12,prose/link/multi/relation,link,True
+G0649,single,Q25973,Q25973,P800,Q1502926,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|notableworks,infobox/link/multi/relation,link,False
+G0650,single,Q908933,Q908933,P21,Q6581072,s16,prose/unlinked/single/relation,unique,False
+G0651,single,Q254220,Q254220,P1412,Q7737,s0,prose/unlinked/single/relation,unique,False
+G0652,single,Q6399,Q65242131,P1346,Q6399,ib:infobox sportsperson|medaltemplates,infobox/link/multi/relation,link,True
+G0653,single,Q131545,Q131545,P19,Q1781,ib:infobox person|birth_place,infobox/link/single/relation,link,True
+G0654,single,Q11998,Q206852,P175,Q11998,s8,prose/link/single/relation,link,True
+G0655,single,Q41223,Q41223,P166,Q37922,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|awards,infobox/link/multi/relation,link,True
+G0656,single,Q7374,Q202548,P162,Q7374,s18,prose/unlinked/multi/relation,unique,False
+G0657,single,Q41223,Q41223,P735,Q39314414,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|birth_name,infobox/unlinked/single/naming,naming,False
+G0658,single,Q438939,Q438939,P54,Q1276685,ib:infobox football biography|clubs3,infobox/link/single/relation,link,False
+G0659,single,Q444,Q444,P463,Q1003,s5,prose/link/multi/relation,link,False
+G0660,single,Q7315,Q7315,P106,Q36834,s1,prose/unlinked/single/relation,unique,False
+G0661,single,Q41223,Q41223,P27,Q34266,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|birth_place,infobox/link/single/relation,link,True
+G0662,single,Q43203,Q43203,P735,Q19826563,ib:infobox officeholder|name,infobox/unlinked/single/naming,naming,False
+G0663,single,Q56008,Q56008,P106,Q33999,s3,prose/unlinked/single/relation,unique,False
+G0664,single,Q55800,Q55800,P106,Q33999,s0,prose/unlinked/single/relation,unique,False
+G0665,single,Q908933,Q908933,P735,Q98669062,ib:infobox musical artist|birth_name,infobox/unlinked/single/naming,naming,False
+G0666,single,Q43203,Q399823,P57,Q43203,s5,prose/link/multi/relation,link,False
+G0667,single,Q26876,Q26876,P106,Q183945,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0668,single,Q319591,Q219414,P3494,Q319591,s11,prose/unlinked/multi/relation,unique,False
+G0669,single,Q6882,Q6507,P50,Q6882,s3,prose/link/multi/relation,link,True
+G0670,single,Q43203,Q496316,P161,Q43203,s5,prose/link/single/relation,link,True
+G0671,single,Q168040,Q168040,P800,Q1964483,ib:infobox writer|notableworks,infobox/link/multi/relation,link,False
+G0672,single,Q5432,Q5432,P27,Q29,s16,prose/unlinked/multi/relation,unique,False
+G0673,single,Q15935,Q15935,P108,Q420822,s14,prose/link/single/relation,link,True
+G0674,single,Q319591,Q319591,P1532,Q114,s4,prose/unlinked/multi/relation,unique,False
+G0675,single,Q25078,Q25078,P27,Q30,s0,prose/unlinked/single/relation,unique,False
+G0676,single,Q19155,Q19155,P106,Q33999,s0,prose/unlinked/single/relation,unique,False
+G0677,single,Q254220,Q7747,P451,Q254220,s2,prose/link/multi/relation,link,False
+G0678,single,Q357102,Q357102,P945,Q30,ib:infobox officeholder|birth_place,infobox/unlinked/multi/relation,unique,False
+G0679,single,Q6882,Q6882,P106,Q36180,s1,prose/unlinked/single/relation,unique,False
+G0680,single,Q444,Q444,P40,Q1392390,ib:infobox officeholder|children,infobox/link/multi/relation,link,False
+G0681,single,Q44467,Q190214,P161,Q44467,s1,prose/link/single/relation,link,True
+G0682,single,Q19155,Q451603,P161,Q19155,s14,prose/link/single/relation,link,True
+G0683,single,Q15935,Q15935,P106,Q183945,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0684,single,Q233332,Q233332,P735,Q13762856,s0,prose/unlinked/single/naming,naming,False
+G0685,single,Q908933,Q908933,P106,Q639669,s19,prose/unlinked/single/relation,unique,False
+G0686,single,Q6399,Q56034419,P1346,Q6399,ib:infobox sportsperson|medaltemplates,infobox/link/single/relation,link,True
+G0687,single,Q39212,Q39212,P20,Q60,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|death_place,infobox/unlinked/single/relation,unique,False
+G0688,single,Q15935,Q54864611,P162,Q15935,s8,prose/link/single/relation,link,True
+G0689,single,Q908933,Q1655174,P86,Q908933,s17,prose/unlinked/multi/relation,one_sense,False
+G0690,single,Q19155,Q41142,P22,Q19155,s16,prose/link/multi/relation,link,True
+G0691,single,Q5432,Q5432,P800,Q152867,s14,prose/link/multi/relation,link,False
+G0692,single,Q7315,Q7315,P101,Q27908,s3,prose/unlinked/single/relation,unique,False
+G0693,single,Q254220,Q254220,P27,Q15180,ib:infobox gymnast|birth_place,infobox/link/single/relation,link,True
+G0694,single,Q7374,Q7374,P106,Q2526255,s2,prose/unlinked/multi/relation,unique,False
+G0695,single,Q43203,Q43203,P166,Q1011547,s11,prose/link/single/relation,link,True
+G0696,single,Q319591,Q18720385,P710,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0697,single,Q134958,Q134958,P800,Q2658157,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|pseudonym,infobox/unlinked/multi/relation,one_sense,False
+G0698,single,Q319591,Q319591,P54,Q200009,s21,prose/link/single/relation,link,True
+G0699,single,Q6882,Q444609,P26,Q6882,s8,prose/link/multi/relation,link,True
+G0700,single,Q5383,Q831890,P175,Q5383,s10,prose/link/multi/relation,link,False
+G0701,single,Q7542,Q7542,P264,Q2280168,ib:infobox musical artist|label,infobox/link/multi/relation,link,True
+G0702,single,Q43203,Q126699,P162,Q43203,s6,prose/link/multi/relation,link,True
+G0703,single,Q7374,Q129895,P161,Q7374,s13,prose/link/multi/relation,link,False
+G0704,single,Q357102,Q357102,P27,Q30,ib:infobox officeholder|allegiance,infobox/unlinked/multi/relation,unique,False
+G0705,single,Q36301,Q174385,P161,Q36301,s8,prose/link/single/relation,link,True
+G0706,single,Q319591,Q319591,P1344,Q837649,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0707,single,Q319591,Q319591,P166,Q1360546,ib:infobox cyclist|majorwins,infobox/link/single/relation,link,True
+G0708,single,Q134958,Q134958,P27,Q34266,s5,prose/unlinked/single/relation,unique,True
+G0709,single,Q549981,Q737650,P161,Q549981,s11,prose/link/single/relation,link,True
+G0710,single,Q25973,Q860577,P50,Q25973,s1,prose/link/multi/relation,link,True
+G0711,single,Q15935,Q15935,P27,Q30,ib:infobox person|birth_place,infobox/unlinked/single/relation,unique,False
+G0712,single,Q254395,Q6034,P3342,Q254395,ib:infobox artist|movement,infobox/link/multi/relation,link,True
+G0713,single,Q9161,Q9161,P27,Q83286,s12,prose/link/single/relation,link,True
+G0714,single,Q55800,Q694106,P371,Q55800,s1,prose/link/multi/relation,link,False
+G0715,single,Q9161,Q9161,P241,Q155198,s1,prose/link/single/relation,link,True
+G0716,single,Q438939,Q438939,P19,Q23482,ib:infobox football biography|youthclubs2,infobox/unlinked/single/relation,unique,True
+G0717,single,Q6882,Q465360,P50,Q6882,s3,prose/link/multi/relation,link,True
+G0718,single,Q908933,Q908933,P136,Q58339,s4,prose/unlinked/single/relation,unique,True
+G0719,single,Q134958,Q134958,P734,Q3019250,s0,prose/unlinked/single/naming,naming,False
+G0720,single,Q36301,Q36301,P735,Q391321,s0,prose/unlinked/single/naming,naming,False
+G0721,single,Q131545,Q131545,P509,Q223102,ib:infobox person|death_cause,infobox/link/single/relation,link,True
+G0722,single,Q319591,Q837649,P1346,Q319591,s1,prose/link/multi/relation,link,False
+G0723,single,Q56008,Q320384,P170,Q56008,s1,prose/link/multi/relation,link,False
+G0724,single,Q7542,Q1436550,P162,Q7542,s6,prose/link/multi/relation,link,True
+G0725,single,Q36322,Q36322,P53,Q28402714,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]]. -->|relatives,infobox/link/single/relation,link,False
+G0726,single,Q5432,Q5432,P135,Q122960,s8,prose/link/single/relation,link,True
+G0727,single,Q25078,Q16402,P527,Q25078,s2,prose/unlinked/multi/relation,unique,True
+G0728,single,Q254395,Q254395,P20,Q72,ib:infobox artist|death_place,infobox/link/single/relation,link,True
+G0729,single,Q549981,Q1086449,P175,Q549981,s7,prose/link/single/relation,link,True
+G0730,single,Q39212,Q849701,P50,Q39212,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|notableworks,infobox/link/multi/relation,link,True
+G0731,single,Q55800,Q55800,P451,Q5767365,ib:infobox person|partner,infobox/link/multi/relation,link,False
+G0732,single,Q319591,Q15220420,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0733,single,Q5432,Q5432,P27,Q29,s13,prose/unlinked/multi/relation,one_sense,False
+G0734,single,Q6882,Q6882,P800,Q459592,ib:infobox writer|notableworks,infobox/link/multi/relation,link,False
+G0735,single,Q41173,Q41173,P136,Q850412,s5,prose/link/single/relation,link,True
+G0736,single,Q319591,Q20046675,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0737,single,Q41173,Q41173,P735,Q651493,s0,prose/unlinked/single/naming,naming,False
+G0738,single,Q26876,Q26876,P136,Q83440,s6,prose/unlinked/multi/relation,unique,False
+G0739,single,Q15935,Q15935,P800,Q1130097,s4,prose/link/multi/relation,link,False
+G0740,single,Q444,Q444,P27,Q36,s8,prose/unlinked/multi/relation,unique,True
+G0741,single,Q254395,Q254395,P27,Q39,s4,prose/unlinked/single/relation,unique,False
+G0742,single,Q15935,Q96970526,P710,Q15935,s18,prose/link/multi/relation,link,False
+G0743,single,Q36301,Q43208792,P161,Q36301,s10,prose/link/single/relation,link,True
+G0744,single,Q56008,Q56008,P734,Q1259568,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0745,single,Q256380,Q256380,P1416,Q80978,s0,prose/link/single/relation,link,True
+G0746,single,Q483577,Q483577,P734,Q16860241,ib:infobox football biography|fullname,infobox/unlinked/single/naming,naming,True
+G0747,single,Q549981,Q549981,P1303,Q5994,ib:infobox musical artist|instrument,infobox/unlinked/single/relation,unique,False
+G0748,single,Q7315,Q7315,P101,Q638,s2,prose/unlinked/single/relation,unique,False
+G0749,single,Q5432,Q5432,P135,Q37068,s0,prose/link/single/relation,link,True
+G0750,single,Q56008,Q189054,P57,Q56008,s2,prose/link/multi/relation,link,False
+G0751,single,Q11998,Q11998,P264,Q208909,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0752,single,Q44467,Q44467,P1412,Q1860,s0,prose/unlinked/single/relation,unique,False
+G0753,single,Q41173,Q41173,P734,Q21494330,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0754,single,Q5383,Q2465713,P175,Q5383,s7,prose/link/multi/relation,link,True
+G0755,single,Q107006,Q2713078,P26,Q107006,s1,prose/link/multi/relation,link,False
+G0756,single,Q26876,Q26876,P264,Q2902300,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0757,single,Q25973,Q25973,P734,Q1615700,s0,prose/unlinked/single/naming,naming,False
+G0758,single,Q434839,Q9215,P1038,Q434839,ib:infobox scientist|influences,infobox/link/multi/relation,link,True
+G0759,single,Q5432,Q3819135,P170,Q5432,s19,prose/link/single/relation,link,True
+G0760,single,Q6882,Q6882,P106,Q49757,s0,prose/unlinked/single/relation,unique,False
+G0761,single,Q7542,Q7542,P136,Q164444,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0762,single,Q5432,Q8049268,P170,Q5432,s19,prose/link/single/relation,link,True
+G0763,single,Q444,Q779984,P138,Q444,s14,prose/link/single/relation,link,True
+G0764,single,Q47087,Q47087,P26,Q108650543,ib:infobox writer|spouse,infobox/unlinked/multi/relation,unique,False
+G0765,single,Q108366,Q108366,P551,Q65,ib:infobox person|resting_place,infobox/unlinked/multi/relation,unique,False
+G0766,single,Q41173,Q41173,P734,Q21494330,s0,prose/unlinked/single/naming,naming,False
+G0767,single,Q5383,Q581952,P86,Q5383,s6,prose/link/multi/relation,link,False
+G0768,single,Q254395,Q254395,P27,Q183,s1,prose/unlinked/single/relation,unique,False
+G0769,single,Q11998,Q11998,P1050,Q128581,s21,prose/unlinked/single/relation,unique,False
+G0770,single,Q6882,Q3838462,P22,Q6882,s19,prose/link/multi/relation,link,True
+G0771,single,Q254395,Q254395,P735,Q14942517,s0,prose/unlinked/single/naming,naming,False
+G0772,single,Q908933,Q1655174,P175,Q908933,s17,prose/unlinked/multi/relation,one_sense,False
+G0773,single,Q256380,Q256380,P27,Q30,ib:infobox person|birth_place,infobox/unlinked/single/relation,unique,False
+G0774,single,Q1426,Q782451,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|australianopenresult",infobox/link/multi/relation,link,False
+G0775,single,Q357102,Q357102,P945,Q30,s0,prose/unlinked/multi/relation,unique,False
+G0776,single,Q5383,Q5383,P101,Q222749,s17,prose/unlinked/single/relation,unique,False
+G0777,single,Q5383,Q5383,P1303,Q52954,ib:infobox musical artist|instruments,infobox/unlinked/single/relation,unique,False
+G0778,single,Q19155,Q7302441,P26,Q19155,ib:infobox person|spouse,infobox/link/multi/relation,link,False
+G0779,single,Q319591,Q916174,P1346,Q319591,s3,prose/link/multi/relation,link,True
+G0780,single,Q55800,Q55800,P734,Q28819324,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0781,single,Q483577,Q483577,P54,Q201584,s12,prose/link/single/relation,link,True
+G0782,single,Q23891,Q367163,P161,Q23891,s4,prose/link/single/relation,link,True
+G0783,single,Q444,Q1003,P112,Q444,s7,prose/unlinked/multi/relation,unique,False
+G0784,single,Q254395,Q254395,P27,Q39,s1,prose/unlinked/single/relation,unique,False
+G0785,single,Q108366,Q108366,P735,Q922983,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0786,single,Q319591,Q319591,P735,Q1084472,ib:infobox cyclist|fullname,infobox/unlinked/single/naming,naming,False
+G0787,single,Q25078,Q25078,P106,Q266569,s5,prose/unlinked/single/relation,unique,False
+G0788,single,Q41173,Q41173,P136,Q37073,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0789,single,Q56008,Q212041,P57,Q56008,s1,prose/link/multi/relation,link,True
+G0790,single,Q6882,Q6882,P800,Q459592,s11,prose/unlinked/multi/relation,one_sense,False
+G0791,single,Q7374,Q587419,P57,Q7374,ib:infobox person|notable_works,infobox/link/multi/relation,link,True
+G0792,single,Q319591,Q4451380,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/single/relation,link,True
+G0793,single,Q319591,Q319591,P641,Q3609,ib:infobox cyclist|medaltemplates,infobox/link/single/relation,link,True
+G0794,single,Q41173,Q41173,P451,Q191088,s2,prose/link/multi/relation,link,False
+G0795,single,Q5383,Q5383,P136,Q217467,ib:infobox musical artist|genre,infobox/link/multi/relation,link,True
+G0796,single,Q7374,Q587419,P161,Q7374,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0797,single,Q15935,Q85771140,P175,Q15935,s7,prose/link/multi/relation,link,True
+G0798,single,Q7374,Q7374,P735,Q3480335,s0,prose/unlinked/single/naming,naming,False
+G0799,single,Q25973,Q25973,P106,Q1028181,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|occupation,infobox/unlinked/single/relation,unique,False
+G0800,single,Q256380,Q256380,P22,Q1350771,ib:infobox person|birth_name,infobox/unlinked/multi/relation,one_sense,True
+G0801,single,Q43682,Q43682,P735,Q18145728,ib:infobox football biography|name,infobox/unlinked/single/naming,naming,False
+G0802,single,Q23891,Q23891,P103,Q1860,s0,prose/unlinked/multi/relation,unique,False
+G0803,single,Q1426,Q378627,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|wimbledonresult",infobox/link/multi/relation,link,False
+G0804,single,Q41223,Q41223,P800,Q206870,s7,prose/unlinked/multi/relation,one_sense,False
+G0805,single,Q26876,Q26876,P21,Q6581072,s4,prose/unlinked/single/relation,unique,False
+G0806,single,Q319591,Q319591,P31,Q5,s15,prose/unlinked/multi/relation,unique,False
+G0807,single,Q908933,Q6494268,P175,Q908933,s5,prose/link/single/relation,link,True
+G0808,single,Q26876,Q37814092,P162,Q26876,s8,prose/link/multi/relation,link,True
+G0809,single,Q233332,Q233332,P551,Q779,ib:infobox tennis biography|residence,infobox/link/single/relation,link,True
+G0810,single,Q5383,Q5383,P103,Q1860,s0,prose/unlinked/multi/relation,unique,False
+G0811,single,Q5383,Q5383,P136,Q9778,s11,prose/link/single/relation,link,True
+G0812,single,Q449013,Q449013,P101,Q1930187,s5,prose/unlinked/multi/relation,unique,False
+G0813,single,Q1426,Q1426,P1532,Q39,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|residence",infobox/unlinked/multi/relation,unique,False
+G0814,single,Q36322,Q36322,P800,Q223880,s4,prose/link/multi/relation,link,False
+G0815,single,Q7374,Q202548,P1431,Q7374,s18,prose/unlinked/multi/relation,unique,False
+G0816,single,Q180383,Q180383,P39,Q6508547,s9,prose/link/single/relation,link,True
+G0817,single,Q168040,Q168040,P166,Q2111303,ib:infobox writer|awards,infobox/link/single/relation,link,True
+G0818,single,Q51545,Q51545,P27,Q29,ib:infobox person|citizenship,infobox/link/single/relation,link,True
+G0819,single,Q42581,Q42581,P734,Q609239,s0,prose/unlinked/single/naming,naming,False
+G0820,single,Q51545,Q51545,P1950,Q47246523,s0,prose/unlinked/single/naming,naming,False
+G0821,single,Q19155,Q19155,P101,Q11424,s14,prose/unlinked/single/relation,unique,False
+G0822,single,Q1426,Q1426,P1532,Q39,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|birth_place",infobox/unlinked/multi/relation,unique,False
+G0823,single,Q444,Q444,P735,Q2755455,ib:infobox officeholder|name,infobox/unlinked/single/naming,naming,False
+G0824,single,Q5432,Q5432,P20,Q1479,ib:infobox artist|death_place,infobox/link/multi/relation,link,True
+G0825,single,Q19155,Q19155,P101,Q11424,s2,prose/unlinked/single/relation,unique,False
+G0826,single,Q25078,Q25078,P463,Q16402,s0,prose/link/multi/relation,link,False
+G0827,single,Q5383,Q595352,P175,Q5383,s12,prose/link/single/relation,link,True
+G0828,single,Q319591,Q319591,P101,Q53121,s9,prose/unlinked/single/relation,commonness,False
+G0829,single,Q449013,Q449013,P734,Q37501417,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0830,single,Q43203,Q16970789,P162,Q43203,s10,prose/link/multi/relation,link,True
+G0831,single,Q25973,Q25973,P19,Q487921,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|birth_place,infobox/link/single/relation,link,True
+G0832,single,Q6882,Q6882,P20,Q72,s12,prose/link/multi/relation,link,True
+G0833,single,Q5432,Q5432,P39,Q984276,s13,prose/link/single/relation,link,True
+G0834,single,Q43682,Q15789,P634,Q43682,s1,prose/link/multi/relation,link,True
+G0835,single,Q483577,Q483577,P54,Q508440,ib:infobox football biography|youthclubs2,infobox/link/single/relation,link,True
+G0836,single,Q51545,Q308920,P57,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0837,single,Q107006,Q107006,P734,Q56537934,s0,prose/unlinked/single/naming,naming,False
+G0838,single,Q254395,Q254395,P101,Q11629,s0,prose/link/single/relation,link,False
+G0839,single,Q5383,Q5383,P1303,Q6607,ib:infobox musical artist|instruments,infobox/unlinked/single/relation,unique,False
+G0840,single,Q180383,Q180383,P735,Q385468,s0,prose/unlinked/single/naming,naming,False
+G0841,single,Q19155,Q1688164,P161,Q19155,s4,prose/link/single/relation,link,True
+G0842,single,Q55800,Q55800,P735,Q19819754,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0843,single,Q549981,Q549981,P734,Q59853,s0,prose/unlinked/single/naming,naming,False
+G0844,single,Q483577,Q483577,P54,Q899189,ib:infobox football biography|nationalteam2,infobox/link/single/relation,link,True
+G0845,single,Q56008,Q81819,P451,Q56008,ib:infobox person|partner,infobox/link/multi/relation,link,True
+G0846,single,Q47087,Q47087,P27,Q145,s11,prose/unlinked/single/relation,unique,False
+G0847,single,Q43203,Q43203,P102,Q29468,ib:infobox officeholder|otherparty,infobox/link/single/relation,link,True
+G0848,single,Q56008,Q56008,P19,Q39561,ib:infobox person|birth_place,infobox/link/multi/relation,link,True
+G0849,single,Q19155,Q279284,P161,Q19155,s4,prose/link/single/relation,link,True
+G0850,single,Q43203,Q43203,P166,Q103360,s8,prose/link/multi/relation,link,True
+G0851,single,Q36322,Q769075,P50,Q36322,s6,prose/link/single/relation,link,True
+G0852,single,Q41173,Q41173,P27,Q30,s2,prose/unlinked/single/relation,unique,False
+G0853,single,Q43682,Q43682,P1344,Q79859,s2,prose/link/single/relation,link,True
+G0854,single,Q7315,Q7315,P800,Q50956,s2,prose/link/multi/relation,link,False
+G0855,single,Q319591,Q40291282,P2321,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,True
+G0856,single,Q36322,Q36322,P103,Q1860,s0,prose/unlinked/multi/relation,commonness,False
+G0857,single,Q7374,Q1621121,P138,Q7374,s14,prose/link/single/relation,link,True
+G0858,single,Q41173,Q5434741,P175,Q41173,s6,prose/link/multi/relation,link,False
+G0859,single,Q11998,Q625701,P676,Q11998,s10,prose/link/multi/relation,link,True
+G0860,single,Q47087,Q103474,P1877,Q47087,s1,prose/link/multi/relation,link,False
+G0861,single,Q56008,Q105553568,P57,Q56008,s1,prose/link/multi/relation,link,True
+G0862,single,Q39212,Q39212,P106,Q164236,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|occupation,infobox/link/single/relation,link,True
+G0863,single,Q319591,Q40291282,P4321,Q319591,s1,prose/link/multi/relation,link,False
+G0864,single,Q55800,Q55800,P800,Q694106,s1,prose/link/multi/relation,link,False
+G0865,single,Q7315,Q50956,P86,Q7315,s2,prose/link/multi/relation,link,True
+G0866,single,Q134958,Q134958,P735,Q1960378,s0,prose/unlinked/single/naming,naming,False
+G0867,single,Q39212,Q39212,P26,Q22273839,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|spouses,infobox/unlinked/multi/relation,unique,False
+G0868,single,Q108366,Q108366,P735,Q922983,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0869,single,Q7374,Q7374,P27,Q145,ib:infobox person|citizenship,infobox/unlinked/single/relation,commonness,False
+G0870,single,Q5383,Q288281,P86,Q5383,s9,prose/link/multi/relation,link,False
+G0871,single,Q55800,Q55800,P1889,Q1697019,ib:infobox person|birth_name,infobox/unlinked/single/relation,unique,False
+G0872,single,Q5432,Q152867,P170,Q5432,s14,prose/link/multi/relation,link,True
+G0873,single,Q11998,Q11998,P27,Q408,ib:infobox person|citizenship,infobox/unlinked/single/relation,unique,False
+G0874,single,Q9161,Q9161,P241,Q155198,s11,prose/unlinked/single/relation,unique,True
+G0875,single,Q9161,Q2484636,P26,Q9161,ib:infobox officeholder|spouse,infobox/link/multi/relation,link,False
+G0876,single,Q180383,Q180383,P166,Q973829,ib:infobox officeholder|honorific-suffix,infobox/unlinked/single/relation,unique,False
+G0877,single,Q5383,Q5383,P734,Q16824068,s0,prose/unlinked/single/naming,naming,False
+G0878,single,Q7374,Q1509470,P161,Q7374,s10,prose/link/multi/relation,link,False
+G0879,single,Q6399,Q6399,P734,Q42846316,ib:infobox sportsperson|name,infobox/unlinked/single/naming,naming,False
+G0880,single,Q41223,Q206870,P50,Q41223,s3,prose/link/multi/relation,link,True
+G0881,single,Q11998,Q188461,P3373,Q11998,ib:infobox person|relatives,infobox/link/multi/relation,link,False
+G0882,single,Q254220,Q254220,P1344,Q794224,ib:infobox gymnast|medaltemplates,infobox/link/single/relation,link,True
+G0883,single,Q51545,Q852841,P57,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,True
+G0884,single,Q56008,Q164417,P170,Q56008,s1,prose/link/multi/relation,link,False
+G0885,single,Q319591,Q219414,P4320,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0886,single,Q908933,Q1655174,P86,Q908933,s4,prose/link/multi/relation,link,False
+G0887,single,Q254395,Q254395,P27,Q39,s0,prose/unlinked/single/relation,unique,False
+G0888,single,Q908933,Q4978336,P26,Q908933,ib:infobox musical artist|associated_acts,infobox/link/multi/relation,link,True
+G0889,single,Q6399,Q6399,P2416,Q184865,s0,prose/link/single/relation,link,True
+G0890,single,Q444,Q673527,P991,Q444,s1,prose/link/multi/relation,link,False
+G0891,single,Q36301,Q36301,P800,Q1046295,s4,prose/link/multi/relation,link,False
+G0892,single,Q11998,Q11998,P264,Q836202,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0893,single,Q55800,Q694106,P161,Q55800,s9,prose/unlinked/multi/relation,unique,True
+G0894,single,Q34389,Q34389,P264,Q664167,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0895,single,Q319591,Q837649,P4324,Q319591,s10,prose/link/multi/relation,link,False
+G0896,single,Q5383,Q5383,P264,Q2733913,ib:infobox musical artist|label,infobox/link/single/relation,link,True
+G0897,single,Q131545,Q131545,P106,Q15855449,s1,prose/unlinked/multi/relation,unique,False
+G0898,single,Q5432,Q5432,P26,Q21198563,s6,prose/link/multi/relation,link,True
+G0899,single,Q131545,Q131545,P31,Q5,s10,prose/unlinked/multi/relation,unique,False
+G0900,single,Q1426,Q25344123,P1346,Q1426,s11,prose/link/multi/relation,link,False
+G0901,single,Q42581,Q42581,P735,Q6383805,ib:infobox person|other_names,infobox/unlinked/single/naming,naming,False
+G0902,single,Q134958,Q134958,P106,Q483501,s0,prose/unlinked/single/relation,unique,False
+G0903,single,Q56008,Q56008,P26,Q242015,s3,prose/link/multi/relation,link,True
+G0904,single,Q19155,Q2345,P161,Q19155,s10,prose/link/multi/relation,link,True
+G0905,single,Q319591,Q40291282,P4320,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0906,single,Q43203,Q73823,P175,Q43203,s1,prose/link/single/relation,link,True
+G0907,single,Q108366,Q177922,P161,Q108366,s11,prose/link/single/relation,link,True
+G0908,single,Q107006,Q107006,P19,Q798445,s1,prose/link/multi/relation,link,True
+G0909,single,Q34389,Q34389,P106,Q177220,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0910,single,Q319591,Q319591,P2522,Q837649,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0911,single,Q23891,Q23891,P106,Q33999,s0,prose/unlinked/single/relation,unique,False
+G0912,single,Q11998,Q11998,P136,Q37073,ib:infobox musical artist|genre,infobox/link/single/relation,link,True
+G0913,single,Q319591,Q319591,P27,Q145,s0,prose/unlinked/multi/relation,unique,False
+G0914,single,Q36301,Q244975,P161,Q36301,s8,prose/link/single/relation,link,True
+G0915,single,Q39212,Q39212,P106,Q6625963,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|occupation,infobox/unlinked/single/relation,unique,False
+G0916,single,Q319591,Q319591,P27,Q145,s4,prose/unlinked/multi/relation,unique,False
+G0917,single,Q434839,Q7257960,P50,Q434839,s5,prose/link/single/relation,link,True
+G0918,single,Q7315,Q7315,P101,Q638,s8,prose/unlinked/single/relation,unique,False
+G0919,single,Q7542,Q7542,P106,Q33999,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0920,single,Q15935,Q271308,P175,Q15935,s4,prose/link/multi/relation,link,False
+G0921,single,Q549981,Q549981,P734,Q59853,ib:infobox musical artist|name,infobox/unlinked/single/naming,naming,False
+G0922,single,Q7542,Q7542,P27,Q30,s0,prose/unlinked/single/relation,unique,False
+G0923,single,Q25078,Q25078,P106,Q28389,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0924,single,Q108366,Q108366,P20,Q65,ib:infobox person|death_place,infobox/link/multi/relation,link,True
+G0925,single,Q908933,Q908933,P27,Q30,s10,prose/unlinked/single/relation,unique,False
+G0926,single,Q319591,Q21821246,P1346,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G0927,single,Q11998,Q11998,P735,Q558067,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0928,single,Q19155,Q19155,P101,Q11424,s11,prose/unlinked/single/relation,unique,False
+G0929,single,Q229507,Q229507,P735,Q20798991,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0930,single,Q434839,Q434839,P20,Q49111,ib:infobox scientist|death_place,infobox/link/single/relation,link,True
+G0931,single,Q51545,Q308920,P58,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0932,single,Q549981,Q2255215,P175,Q549981,s7,prose/link/single/relation,link,True
+G0933,single,Q11998,Q3157348,P161,Q11998,s15,prose/link/single/relation,link,True
+G0934,single,Q357102,Q357102,P27,Q30,ib:infobox officeholder|birth_place,infobox/unlinked/multi/relation,unique,False
+G0935,single,Q39212,Q39212,P26,Q5353161,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|spouses,infobox/link/multi/relation,link,False
+G0936,single,Q449013,Q449013,P106,Q947873,s2,prose/unlinked/single/relation,unique,False
+G0937,single,Q6882,Q6882,P106,Q36180,s23,prose/unlinked/single/relation,unique,False
+G0938,single,Q56008,Q116852,P57,Q56008,s2,prose/link/multi/relation,link,True
+G0939,single,Q6882,Q6882,P800,Q6511,ib:infobox writer|notableworks,infobox/link/multi/relation,link,False
+G0940,single,Q19155,Q472390,P161,Q19155,s9,prose/link/single/relation,link,True
+G0941,single,Q26876,Q26876,P136,Q1298934,s7,prose/link/single/relation,link,True
+G0942,single,Q44467,Q44467,P734,Q16860126,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0943,single,Q19155,Q19155,P26,Q238036,ib:infobox person|spouse,infobox/link/multi/relation,link,False
+G0944,single,Q19155,Q10961701,P26,Q19155,ib:infobox person|spouse,infobox/link/multi/relation,link,True
+G0945,single,Q254220,Q254220,P1344,Q8544,ib:infobox gymnast|medaltemplates,infobox/link/single/relation,link,True
+G0946,single,Q319591,Q319591,P1532,Q114,ib:infobox cyclist|birth_place,infobox/unlinked/multi/relation,unique,False
+G0947,single,Q7374,Q204212,P161,Q7374,ib:infobox person|notable_works,infobox/link/multi/relation,link,False
+G0948,single,Q7315,Q7315,P1412,Q7737,s7,prose/unlinked/multi/relation,unique,False
+G0949,single,Q25078,Q16402,P527,Q25078,s0,prose/link/multi/relation,link,True
+G0950,single,Q26876,Q26876,P264,Q2902300,s3,prose/link/single/relation,link,True
+G0951,single,Q7374,Q7374,P136,Q9503,s3,prose/unlinked/single/relation,commonness,False
+G0952,single,Q5383,Q5383,P101,Q638,s5,prose/unlinked/single/relation,unique,False
+G0953,single,Q449013,Q449013,P735,Q16578428,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0954,single,Q908933,Q908933,P27,Q30,s9,prose/unlinked/single/relation,unique,False
+G0955,single,Q6399,Q17501622,P1346,Q6399,ib:infobox sportsperson|medaltemplates,infobox/link/single/relation,link,True
+G0956,single,Q11998,Q11998,P27,Q145,s6,prose/unlinked/single/relation,unique,False
+G0957,single,Q108366,Q5607657,P26,Q108366,ib:infobox person|spouse,infobox/unlinked/multi/relation,unique,False
+G0958,single,Q254395,Q254395,P26,Q153739,s3,prose/unlinked/multi/relation,unique,False
+G0959,single,Q7374,Q7374,P106,Q2526255,ib:infobox person|occupation,infobox/unlinked/multi/relation,unique,False
+G0960,single,Q7542,Q7542,P264,Q2280168,s15,prose/link/multi/relation,link,True
+G0961,single,Q43203,Q43203,P40,Q976575,ib:infobox officeholder|children,infobox/link/multi/relation,link,False
+G0962,single,Q180383,Q180383,P102,Q1048192,ib:infobox officeholder|party,infobox/link/single/relation,link,True
+G0963,single,Q7542,Q7542,P740,Q36091,s5,prose/link/multi/relation,link,True
+G0964,single,Q107006,Q346976,P451,Q107006,s6,prose/link/multi/relation,link,False
+G0965,single,Q434839,Q7257960,P50,Q434839,ib:infobox scientist|known_for,infobox/link/single/relation,link,True
+G0966,single,Q11998,Q11998,P27,Q145,ib:infobox person|citizenship,infobox/unlinked/single/relation,unique,False
+G0967,single,Q25973,Q25973,P800,Q836841,s1,prose/link/multi/relation,link,False
+G0968,single,Q5432,Q5432,P937,Q1479,ib:infobox artist|death_place,infobox/link/multi/relation,link,False
+G0969,single,Q25078,Q578344,P58,Q25078,s1,prose/link/multi/relation,link,False
+G0970,single,Q1426,Q1426,P2522,Q25344123,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|wimbledonresult",infobox/link/multi/relation,link,True
+G0971,single,Q5432,Q5432,P800,Q1163663,s19,prose/link/multi/relation,link,False
+G0972,single,Q1426,Q248965,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|wimbledonresult",infobox/link/multi/relation,link,False
+G0973,single,Q434839,Q434839,P101,Q133080,ib:infobox scientist|known_for,infobox/link/single/relation,link,True
+G0974,single,Q7542,Q519725,P527,Q7542,s8,prose/link/multi/relation,link,False
+G0975,single,Q34389,Q736254,P161,Q34389,s16,prose/link/single/relation,link,True
+G0976,single,Q23891,Q895837,P161,Q23891,s5,prose/link/single/relation,link,True
+G0977,single,Q1426,Q304072,P1346,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|usopenresult",infobox/link/multi/relation,link,False
+G0978,single,Q319591,Q40291282,P2321,Q319591,s1,prose/link/multi/relation,link,True
+G0979,single,Q43682,Q43682,P1344,Q241864,ib:infobox football biography|medaltemplates,infobox/link/single/relation,link,True
+G0980,single,Q36301,Q939325,P161,Q36301,s5,prose/link/single/relation,link,True
+G0981,single,Q36301,Q36301,P735,Q564684,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G0982,single,Q9161,Q9161,P607,Q362,s12,prose/unlinked/single/relation,commonness,True
+G0983,single,Q7542,Q7542,P735,Q16280695,ib:infobox person|other_names,infobox/unlinked/single/naming,naming,False
+G0984,single,Q483577,Q483577,P1532,Q155,s15,prose/unlinked/multi/relation,unique,False
+G0985,single,Q9161,Q9161,P27,Q83286,ib:infobox officeholder|death_place,infobox/link/single/relation,link,True
+G0986,single,Q549981,Q549981,P136,Q8341,s2,prose/link/single/relation,link,True
+G0987,single,Q47087,Q47087,P136,Q995600,s2,prose/unlinked/single/relation,unique,True
+G0988,single,Q6882,Q6511,P50,Q6882,s14,prose/unlinked/multi/relation,one_sense,True
+G0989,single,Q26876,Q1764379,P676,Q26876,s6,prose/link/multi/relation,link,True
+G0990,single,Q6882,Q6882,P800,Q6511,s25,prose/unlinked/multi/relation,one_sense,False
+G0991,single,Q1426,Q1426,P2522,Q751798,s8,prose/link/multi/relation,link,True
+G0992,single,Q483577,Q483577,P54,Q693297,ib:infobox football biography|clubs13,infobox/link/single/relation,link,True
+G0993,single,Q26876,Q26876,P735,Q3981665,ib:infobox person|birth_name,infobox/unlinked/single/naming,naming,False
+G0994,single,Q444,Q36,P35,Q444,ib:infobox officeholder|birth_place,infobox/link/multi/relation,link,False
+G0995,single,Q168040,Q168040,P511,Q165503,s0,prose/unlinked/single/relation,unique,True
+G0996,single,Q15935,Q15935,P106,Q3501317,ib:infobox person|occupation,infobox/unlinked/single/relation,unique,False
+G0997,single,Q26876,Q26876,P166,Q904528,s16,prose/link/multi/relation,link,True
+G0998,single,Q256380,Q19881031,P710,Q256380,s11,prose/link/single/relation,link,True
+G0999,single,Q908933,Q5979799,P175,Q908933,s11,prose/unlinked/single/relation,unique,False
+G1000,single,Q34389,Q664539,P175,Q34389,s14,prose/link/single/relation,link,True
+G1001,single,Q233332,Q233332,P27,Q30,s1,prose/unlinked/multi/relation,unique,False
+G1002,single,Q15935,Q22101752,P287,Q15935,ib:infobox person|organization,infobox/link/single/relation,link,True
+G1003,single,Q7374,Q496255,P162,Q7374,s12,prose/link/multi/relation,link,False
+G1004,single,Q107006,Q952286,P161,Q107006,s2,prose/link/single/relation,link,True
+G1005,single,Q449013,Q449013,P106,Q1930187,s5,prose/unlinked/multi/relation,unique,False
+G1006,single,Q11998,Q11998,P264,Q2891955,s7,prose/link/single/relation,link,True
+G1007,single,Q43203,Q43203,P106,Q3282637,s7,prose/unlinked/single/relation,unique,False
+G1008,single,Q1426,Q581788,P710,Q1426,"ib:infobox tennis biography <!-- please don't forget to place the related date in the ""updated"" parameter below after each update, thanks -->|olympicsresult",infobox/link/multi/relation,link,True
+G1009,single,Q319591,Q219414,P710,Q319591,s11,prose/unlinked/multi/relation,unique,False
+G1010,single,Q11998,Q931695,P175,Q11998,s6,prose/link/single/relation,link,True
+G1011,single,Q23891,Q23891,P735,Q18042461,ib:infobox person|name,infobox/unlinked/single/naming,naming,False
+G1012,single,Q319591,Q20882755,P3494,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G1013,single,Q107006,Q107006,P1412,Q652,ib:infobox person|nationality,infobox/unlinked/single/relation,one_sense,False
+G1014,single,Q7374,Q202548,P161,Q7374,s18,prose/unlinked/multi/relation,unique,False
+G1015,single,Q254395,Q254395,P26,Q153739,s2,prose/link/multi/relation,link,False
+G1016,single,Q319591,Q21821246,P710,Q319591,s1,prose/link/multi/relation,link,False
+G1017,single,Q41223,Q41223,P734,Q4346673,ib:infobox writer <!-- for more information see [[:template:infobox writer/doc]] -->|name,infobox/unlinked/single/naming,naming,False
+G1018,single,Q319591,Q39058042,P1346,Q319591,ib:infobox cyclist|medaltemplates,infobox/link/multi/relation,link,False
+G1019,single,Q319591,Q319591,P2522,Q40291282,s1,prose/link/multi/relation,link,False
+G1020,single,Q7374,Q7374,P27,Q30,ib:infobox person|death_place,infobox/unlinked/single/relation,unique,False
+G1021,single,Q6882,Q6882,P101,Q8261,s2,prose/unlinked/single/relation,unique,False
+G1022,single,Q549981,Q549981,P734,Q37488528,s0,prose/unlinked/single/naming,naming,False
+G1023,single,Q51545,Q470375,P57,Q51545,ib:infobox person|notable_works,infobox/link/multi/relation,link,True
+G1024,single,Q34389,Q2301672,P175,Q34389,s12,prose/link/single/relation,link,True
+G1025,single,Q6882,Q6882,P937,Q90,s14,prose/unlinked/single/relation,unique,False
+G1026,single,Q51545,Q190575,P1040,Q51545,s3,prose/link/multi/relation,link,False
+G1027,single,Q319591,Q219414,P3494,Q319591,ib:infobox cyclist|majorwins,infobox/link/multi/relation,link,False
+G1028,single,Q15935,Q21996865,P175,Q15935,s6,prose/link/multi/relation,link,False
+G1029,single,Q25078,Q25078,P106,Q33999,s0,prose/unlinked/single/relation,unique,False
