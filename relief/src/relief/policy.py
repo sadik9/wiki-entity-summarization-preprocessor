@@ -1,6 +1,6 @@
 """Constants of the ground-truth policy (relief/docs/ground-truth-policy.md). Versioned with every run."""
 
-POLICY_VERSION = "2026-11-17"
+POLICY_VERSION = "2026-11-18"
 
 # §5.1 Wikimedia-internal entities (by P31)
 WIKIMEDIA_INTERNAL = {
@@ -20,7 +20,11 @@ LIST_LIKE = {
     "Q273057", "Q4162149",               # discography
     "Q1631107", "Q134995", "Q4086340",   # bibliography
     "Q2662841", "Q17438413",             # videography
+    "Q12139612",                         # list
 }
+# §5.1 also: any class whose English label starts with one of these (Wikidata keeps adding specific list classes,
+# e.g. "Wikimedia artist discography", "Wikimedia list of songs by performer")
+INTERNAL_LABEL_PREFIXES = ("Wikimedia ", "Wikipedia ")
 # §5.3 aspect sub-articles: neighbour label contains the root label and is linked through these properties
 ASPECT_PROPERTIES = {"P1269", "P921"}    # facet of, main subject
 
@@ -29,11 +33,11 @@ NAMING_PROPERTIES = {"P735", "P734", "P1950", "P9139", "P6978", "P8500", "P5056"
 
 
 def exclusion_reason(root_label: str, predicate: str, neighbour_label: str | None, neighbour_classes: set[str],
-                     is_self_loop: bool) -> str | None:
-    """Why a candidate edge is excluded by policy §5, or None."""
+                     is_self_loop: bool, internal_classes: set[str] = frozenset()) -> str | None:
+    """Why a candidate edge is excluded by policy §5, or None. internal_classes: classes matched by label prefix."""
     if is_self_loop:
         return "self_loop"
-    if neighbour_classes & WIKIMEDIA_INTERNAL:
+    if neighbour_classes & (WIKIMEDIA_INTERNAL | internal_classes):
         return "wikimedia_internal"
     if neighbour_classes & LIST_LIKE:
         return "list_like"

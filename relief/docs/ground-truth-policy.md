@@ -32,8 +32,8 @@ A relation is expressed when a careful reader, given **only** the evidence, woul
 - **Pronouns and short names** ("He", "Presley") in the root's own article refer to the root unless the text clearly says otherwise.
 
 ## 5. Exclusions (candidate filter R1)
-1. **Wikimedia-internal entities** (by `P31`): list article `Q13406463`, disambiguation page `Q4167410`, human-name disambiguation page `Q22808320`, category `Q4167836`, template `Q11266439`, disambiguation category `Q15407973`, project page `Q14204246`, internal item `Q17442446`, page outside the main knowledge tree `Q17379835`.
-2. **List-like works about the root** (by `P31`): filmography `Q1371849`, discography `Q273057`/`Q4162149`, bibliography `Q1631107`/`Q134995`/`Q4086340`, videography `Q2662841`/`Q17438413`.
+1. **Wikimedia-internal entities** (by `P31`): list article `Q13406463`, disambiguation page `Q4167410`, human-name disambiguation page `Q22808320`, category `Q4167836`, template `Q11266439`, disambiguation category `Q15407973`, project page `Q14204246`, internal item `Q17442446`, page outside the main knowledge tree `Q17379835`, **and any class whose English label starts with "Wikimedia " or "Wikipedia "** (added 2026-11-18 after the pilot class review: specific list classes such as *Wikimedia artist discography* slipped through the fixed list).
+2. **List-like works about the root** (by `P31`): filmography `Q1371849`, discography `Q273057`/`Q4162149`, bibliography `Q1631107`/`Q134995`/`Q4086340`, videography `Q2662841`/`Q17438413`, list `Q12139612`.
 3. **Aspect sub-articles of the root:** a neighbour whose label contains the root's label and is linked through `P1269` facet of or `P921` main subject. Examples from the WikES 1.0.5 ground truth: "cultural impact of Elvis Presley" (`P31` cultural impact), "Military career of Elvis Presley" (`P31` military service).
 4. **Self-loops** (*s = o*).
 

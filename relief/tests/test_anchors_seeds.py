@@ -45,3 +45,8 @@ def test_gold_allocation_keeps_rare_strata_and_the_total():
     from relief.gold import allocate
     share = allocate({"big": 2000, "mid": 500, "rare": 12}, 1000, 30)
     assert share["rare"] == 12 and sum(share.values()) == 1000 and share["big"] > share["mid"] >= 30
+
+
+def test_label_prefix_classes_count_as_wikimedia_internal():
+    assert exclusion_reason("X", "P1", "y", {"Q104635718"}, False, internal_classes={"Q104635718"}) == "wikimedia_internal"
+    assert exclusion_reason("X", "P1", "y", {"Q12139612"}, False) == "list_like"

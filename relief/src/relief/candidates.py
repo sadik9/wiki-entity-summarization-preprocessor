@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 
 from more_itertools import chunked
 
-from relief.policy import exclusion_reason
+from relief.policy import INTERNAL_LABEL_PREFIXES, exclusion_reason
 
 
 @dataclass(frozen=True)
@@ -160,11 +160,15 @@ class KnowledgeBase:
             article, redirects = titles.get(q, (None, []))
             entities[q] = Entity(q, label, description, classes.get(q, set()), article, redirects)
         root = entities[qid]
+        all_classes = {c for e in entities.values() for c in e.classes}
+        internal = {c for c, (label, _) in self.labels(all_classes).items()
+                    if label and label.startswith(INTERNAL_LABEL_PREFIXES)}
         candidates = []
         for s, p, o in edges:
             neighbour = o if s == qid else s
             reason = exclusion_reason(root.label or "", p, entities[neighbour].label if neighbour in entities else None,
-                                      entities[neighbour].classes if neighbour in entities else set(), s == o)
+                                      entities[neighbour].classes if neighbour in entities else set(), s == o,
+                                      internal)
             candidates.append(Candidate(s, p, o, neighbour, s == qid, reason))
         page_id, wikitext = self.article(qid)
         return RootContext(root, page_id, wikitext, candidates, entities,
