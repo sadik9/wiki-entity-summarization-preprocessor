@@ -39,3 +39,9 @@ def test_repair_title_undoes_utf8_read_as_latin1_and_leaves_good_titles_alone():
     assert repair_title("Danuta_WaÅ\x82Ä\x99sa") == "Danuta_Wałęsa"
     assert repair_title("AD_São_Caetano") == "AD_São_Caetano"
     assert repair_title("Elvis_Presley") == "Elvis_Presley"
+
+
+def test_gold_allocation_keeps_rare_strata_and_the_total():
+    from relief.gold import allocate
+    share = allocate({"big": 2000, "mid": 500, "rare": 12}, 1000, 30)
+    assert share["rare"] == 12 and sum(share.values()) == 1000 and share["big"] > share["mid"] >= 30

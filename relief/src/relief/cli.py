@@ -53,6 +53,29 @@ def _extract(args, settings: Settings) -> int:
     return 0
 
 
+def _gold_sample(args, settings: Settings) -> int:
+    from pathlib import Path
+
+    from relief.candidates import KnowledgeBase
+    from relief.db import neo4j_driver, pg_connect
+    from relief.gold import write_sheets
+
+    run_dir = Path(settings.runs_dir) / args.run_id
+    with open(run_dir / "instances.jsonl", encoding="utf-8") as f:
+        instances = [json.loads(line) for line in f]
+    with open(run_dir / "roots.jsonl", encoding="utf-8") as f:
+        pages = {r["root"]: r.get("page_id") for r in map(json.loads, f)}
+    qids = {i[k] for i in instances for k in ("root", "subject", "object")}
+    with pg_connect(settings) as pg, neo4j_driver(settings) as neo4j:
+        kb = KnowledgeBase(pg, neo4j)
+        labels = {q: l or q for q, (l, _) in kb.labels(qids).items()}
+        predicates = kb.predicate_labels({i["predicate"] for i in instances})
+    summary = write_sheets(run_dir, instances, labels, predicates, pages, args.n, args.overlap, args.calibration,
+                           args.minimum, args.seed)
+    print(json.dumps(summary, indent=2))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="relief", description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
@@ -82,6 +105,17 @@ def build_parser() -> argparse.ArgumentParser:
     extract.add_argument("--qids", nargs="+", help="roots given directly, instead of --seeds")
     extract.add_argument("--run-id", required=True, help="output folder name under the runs directory")
     extract.set_defaults(handler=_extract)
+
+    gold = commands.add_parser("gold", help="gold-set annotation sheets")
+    gold_commands = gold.add_subparsers(dest="gold_command", required=True)
+    gold_sample = gold_commands.add_parser("sample", help="stratified sheets from an extract run")
+    gold_sample.add_argument("--run-id", required=True)
+    gold_sample.add_argument("--n", type=int, default=1000, help="main sample size (without calibration)")
+    gold_sample.add_argument("--overlap", type=int, default=300, help="items both annotators label")
+    gold_sample.add_argument("--calibration", type=int, default=30)
+    gold_sample.add_argument("--minimum", type=int, default=30, help="minimum items per stratum")
+    gold_sample.add_argument("--seed", type=int, default=2026)
+    gold_sample.set_defaults(handler=_gold_sample)
     return parser
 
 
