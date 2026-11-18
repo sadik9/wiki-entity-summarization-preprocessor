@@ -18,7 +18,7 @@ The graph (Neo4j), page↔QID mapping, article text and labels (Postgres) all co
 
 ## 3. Evidence
 - **Scope:** section 0 of the root's article: the lead prose before the first heading, **and** the infobox(es) in it. This is the scope of the original WikES annotation, which keeps the two comparable.
-- **By design, the summary of a root is exactly the set of its triples expressed in these two parts** (decision of 2026-11-17). Nothing else is evidence: not the article body, other articles, references, categories, navigation boxes, image captions or hatnotes.
+- **By design, the summary of a root is exactly the set of its triples expressed in these two parts** (decision of 2026-11-17). Nothing else is evidence: not the article body, other articles, references (citations), footnotes, categories, navigation boxes, image captions or hatnotes, even when they appear inside the lead section or the infobox (confirmed 2026-11-18 after reviewing the 7 pilot triples this excludes).
 
 ## 4. "Expressed"
 A relation is expressed when a careful reader, given **only** the evidence, would accept the triple as stated or directly implied:
