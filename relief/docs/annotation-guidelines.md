@@ -34,7 +34,32 @@ When the label is `no`, add one **reason** tag:
 - `not_stated`: the entities co-occur but no relation between them is stated;
 - `not_about_root`: the sentence is about someone or something else.
 
-## 3. Rules of thumb
+## 3. Reading a triple (do this first)
+**Read every triple as "*subject*'s *property* is *object*".** The property describes the **subject**; the object
+is its value. The arrow means "has", never "is".
+
+| Triple | Read as | Not as |
+|---|---|---|
+| Elvis — father → Lisa Marie | "Elvis's father is Lisa Marie" (false: `no`, `wrong_direction`) | ~~"Elvis is the father of Lisa Marie"~~ |
+| Lisa Marie — father → Elvis | "Lisa Marie's father is Elvis" | |
+| Mika Brzezinski — employer → MSNBC | "Mika Brzezinski's employer is MSNBC" | ~~"Mika is the employer of MSNBC"~~ |
+| Heartbreak Hotel — performer → Elvis | "Heartbreak Hotel's performer is Elvis" | |
+
+Property labels that are **nouns** (father, child, spouse, employer, performer, place of birth) take "'s". Labels
+that are **verb phrases** (member of, influenced by, named after, educated at) are read straight: "A is a member of B",
+"A was influenced by B".
+
+**Inverse statements count.** Wikidata stores many facts in either direction. If the evidence states the fact from
+the other side, the triple is expressed: *Francesca Eastwood — father → Clint Eastwood* with Clint's infobox
+`children: … Francesca` is `yes` (Clint's child is Francesca, so Francesca's father is Clint).
+
+**Check sequence:**
+1. Read the triple with the rule above. Does the evidence say it, directly or as its inverse? → `yes`.
+2. If not: would swapping subject and object make it `yes`? → `no`, `wrong_direction`.
+3. If not: would a different property fit the same pair? → `no`, `wrong_relation`.
+4. Otherwise pick from `wrong_entity`, `not_about_root`, `not_stated` (§4a).
+
+## 3a. Rules of thumb
 - **Judge only the evidence shown**, plus the article title for "he/she/it". Don't use what you know about the entity.
 - **Accept paraphrase and demonyms:** "American singer" expresses *country of citizenship: United States*; "his wife Priscilla" expresses *spouse*.
 - **Infobox fields count as statements:** `Instruments: guitar` expresses *instrument: guitar*. `Labels: RCA Victor` expresses *record label: RCA Victor*.
